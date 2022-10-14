@@ -1,0 +1,1021 @@
+<html><head><script async="" src="https://c.aaxads.com/aax.js?ver=1.2&amp;hst=www.freesion.com&amp;pub=AAX23QE99"></script><script async="" src="https://c.aaxads.com/aax.js?ver=1.2&amp;hst=www.freesion.com&amp;pub=AAX23QE99"></script><script async="" src="https://c.aaxads.com/aax.js?ver=1.2&amp;hst=www.freesion.com&amp;pub=AAX23QE99"></script><script src="https://rules.quantcount.com/rules-p-6Fv0cGNfc_bw8.js" async=""></script><script type="text/javascript" async="" src="https://script.4dex.io/localstore.js"></script><script type="text/javascript" src="https://ads.themoneytizer.com/moneybid7_10/build/dist/prebid.js" async="true"></script><script type="text/javascript" async="" src="https://p.cpx.to/p/12771/px.js"></script><script src="https://secure.quantserve.com/quant.js" async="" type="text/javascript"></script><script type="text/javascript" src="https://ads.themoneytizer.com/moneybile.js"></script>
+    <title>Sqoop 的基本使用 - 灰信网（软件开发博客聚合）</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Sqoop 的基本使用，灰信网，软件开发博客聚合，程序员专属的优秀博客文章阅读平台">
+    <meta name="description" content="Sqoop 的基本使用，灰信网，软件开发博客聚合，程序员专属的优秀博客文章阅读平台。">
+    <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+    <link rel="stylesheet" href="/assets/css/markdown.css">
+    <link rel="stylesheet" href="/assets/css/viewer.min.css">
+
+    <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202208220101/reactive_library_fy2021.js?bust=31069108"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=www.freesion.com&amp;callback=_gfp_s_&amp;client=ca-pub-5682231266612128&amp;cookie=ID%3D737973542ea383b4-224480923bd500fd%3AT%3D1658191253%3ART%3D1658191253%3AS%3DALNI_MalrzPX22s61ndmK37HP7xlrUdoTg&amp;gpic=UID%3D000007d8893b31c1%3AT%3D1658191253%3ART%3D1658491761%3AS%3DALNI_MYrYd2cyDHpG9m-Qtxm0GrjEIC3Vg&amp;gpid_exp=1"></script><script async="" src="https://c.aaxads.com/aax.js?ver=1.2&amp;hst=www.freesion.com&amp;pub=AAX23QE99"></script><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script async="" type="text/javascript" src="https://cmp.quantcast.com/tcfv2/42/cmp2.js?referer=www.themoneytizer.com"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WS7SWNV"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202208220101/show_ads_impl_fy2021.js?bust=31069108" id="google_shimpl"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PC2RG39"></script><script async="" type="text/javascript" src="https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js"></script><script type="text/javascript" async="true">
+(function() {
+    var host = 'www.themoneytizer.com';
+    var element = document.createElement('script');
+    var firstScript = document.getElementsByTagName('script')[0];
+    var url = 'https://quantcast.mgr.consensu.org'
+        .concat('/choice/', '6Fv0cGNfc_bw8', '/', host, '/choice.js')
+    var uspTries = 0;
+    var uspTriesLimit = 3;
+    element.async = true;
+    element.type = 'text/javascript';
+    element.src = url;
+
+    firstScript.parentNode.insertBefore(element, firstScript);
+
+    function makeStub() {
+        var TCF_LOCATOR_NAME = '__tcfapiLocator';
+        var queue = [];
+        var win = window;
+        var cmpFrame;
+
+        function addFrame() {
+            var doc = win.document;
+            var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+            if (!otherCMP) {
+                if (doc.body) {
+                    var iframe = doc.createElement('iframe');
+
+                    iframe.style.cssText = 'display:none';
+                    iframe.name = TCF_LOCATOR_NAME;
+                    doc.body.appendChild(iframe);
+                } else {
+                    setTimeout(addFrame, 5);
+                }
+            }
+            return !otherCMP;
+        }
+
+        function tcfAPIHandler() {
+            var gdprApplies;
+            var args = arguments;
+
+            if (!args.length) {
+                return queue;
+            } else if (args[0] === 'setGdprApplies') {
+                if (
+                    args.length > 3 &&
+                    args[2] === 2 &&
+                    typeof args[3] === 'boolean'
+                ) {
+                    gdprApplies = args[3];
+                    if (typeof args[2] === 'function') {
+                        args[2]('set', true);
+                    }
+                }
+            } else if (args[0] === 'ping') {
+                var retr = {
+                    gdprApplies: gdprApplies,
+                    cmpLoaded: false,
+                    cmpStatus: 'stub'
+                };
+
+                if (typeof args[2] === 'function') {
+                    args[2](retr);
+                }
+            } else {
+                queue.push(args);
+            }
+        }
+
+        function postMessageEventHandler(event) {
+            var msgIsString = typeof event.data === 'string';
+            var json = {};
+
+            try {
+                if (msgIsString) {
+                    json = JSON.parse(event.data);
+                } else {
+                    json = event.data;
+                }
+            } catch (ignore) {}
+
+            var payload = json.__tcfapiCall;
+
+            if (payload) {
+                window.__tcfapi(
+                    payload.command,
+                    payload.version,
+                    function(retValue, success) {
+                        var returnMsg = {
+                            __tcfapiReturn: {
+                                returnValue: retValue,
+                                success: success,
+                                callId: payload.callId
+                            }
+                        };
+                        if (msgIsString) {
+                            returnMsg = JSON.stringify(returnMsg);
+                        }
+                        event.source.postMessage(returnMsg, '*');
+                    },
+                    payload.parameter
+                );
+            }
+        }
+
+        while (win) {
+            try {
+                if (win.frames[TCF_LOCATOR_NAME]) {
+                    cmpFrame = win;
+                    break;
+                }
+            } catch (ignore) {}
+
+            if (win === window.top) {
+                break;
+            }
+            win = win.parent;
+        }
+        if (!cmpFrame) {
+            addFrame();
+            win.__tcfapi = tcfAPIHandler;
+            win.addEventListener('message', postMessageEventHandler, false);
+        }
+    };
+
+    if (typeof module !== 'undefined') {
+        module.exports = makeStub;
+    } else {
+        makeStub();
+    }
+
+    var uspStubFunction = function() {
+        var arg = arguments;
+        if (typeof window.__uspapi !== uspStubFunction) {
+            setTimeout(function() {
+                if (typeof window.__uspapi !== 'undefined') {
+                    window.__uspapi.apply(window.__uspapi, arg);
+                }
+            }, 500);
+        }
+    };
+
+    var checkIfUspIsReady = function() {
+        uspTries++;
+        if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+            console.warn('USP is not accessible');
+        } else {
+            clearInterval(uspInterval);
+        }
+    };
+
+    if (typeof window.__uspapi === 'undefined') {
+        window.__uspapi = uspStubFunction;
+        var uspInterval = setInterval(checkIfUspIsReady, 6000);
+    }
+})();
+</script>
+
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PC2RG39');</script>
+
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5682231266612128" crossorigin="anonymous" data-checked-head="true"></script>
+    <meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><style type="text/css">pre{position: relative}pre:hover .hljs-button{display: block}.hljs-button{display: none;position: absolute;right: 4px;top: 4px;font-size: 12px;color: #4d4d4d;background-color: white;padding: 2px 8px;margin: 8px;border-radius: 4px;cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.05);}.hljs-button:after{content: attr(data-title)}</style><style type="text/css">.hljs-ln{border-collapse:collapse}            .hljs-ln td{padding:0}            .hljs-ln-n{text-align: right;padding-right: 8px;}            .hljs-ln-n:before{content:attr(data-line-number)}</style><style type="text/css"> .qc-cmp-button.qc-cmp-secondary-button:hover {    background-color: #368bd6 !important;    border-color: transparent !important;  }  .qc-cmp-button.qc-cmp-secondary-button:hover {    color: #ffffff !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    color: #368bd6 !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    background-color: #eee !important;    border-color: transparent !important;  } </style><meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.freesion.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.freesion.com"></script><script async="" src="https://fundingchoicesmessages.google.com/i/ca-pub-5682231266612128?ers=2"></script><meta http-equiv="origin-trial" content="AuMIhPiI/SulZt/mn9DI6CjtPpnhRnD0zwQS3nDwCFdErMazWrGpX9kJWNg6LMgDfoN4yP8Ib6N5Zf7CF8mSmwsAAABgeyJvcmlnaW4iOiJodHRwczovL3RoZW1vbmV5dGl6ZXIuY29tOjQ0MyIsImZlYXR1cmUiOiJQcml2YWN5U2FuZGJveEFkc0FQSXMiLCJleHBpcnkiOjE2NjEyOTkxOTl9"><script type="text/javascript" src="https://ced.sascdn.com/tag/1097/smart.js"></script><script type="text/javascript" src="https://gum.criteo.com/sync?c=147&amp;r=2&amp;j=criteoCallback" async="true"></script><script type="text/html" src="https://csync-global.smartadserver.com/1097/CookieSync.html" async="true"></script><script type="text/javascript" src="https://spl.zeotap.com/mapper.js?env=mWeb&amp;eventType=pageview&amp;zdid=1258" async="true" id="zeo_mapping"></script><script type="text/javascript" async="" src="https://tag.leadplace.fr/libJsLP.js"></script><iframe src="https://onetag-sys.com/usync/?pubId=2a897e3f18e6769&amp;cb=1661561001774" style="display: none;"></iframe><script type="text/javascript" src="https://d2zur9cc2gf1tx.cloudfront.net/a96081b6-db78-48c4-9f82-b93e316fb1f7/notifyme.js"></script><script type="text/javascript" src="https://ap.lijit.com/www/sovrn_beacon_standalone/sovrn_standalone_beacon.js?iid=261720&amp;amp;uid=themoneytizer" async="true" id="”sBeacon”"></script><script src="https://s.cpx.to/fire.js?pid=12771&amp;ref=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DRC_fVfq7tr_6F0Nbe2oD9o8beXoIk-IxSEe89HKFdXuiumX0UbNoj29F4e8-IWrIvqIn2dGdnPh8pGiG-6vet_%26wd%3D%26eqid%3Ded080cba000228e8000000066309682d&amp;url=https%3A%2F%2Fwww.freesion.com%2Farticle%2F92811308451%2F&amp;hn_ver=40&amp;fid=bc35642f-3acf-423a-9d70-24175242d14e&amp;dsp=pub_common&amp;dsp_uid=79657da2-66d5-4906-8c98-3708d4e3cbed"></script></head>
+<body class=""><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="0" width="0" id="mnet" src="https://c.aaxads.com/aacxs.php?flg=AAX23QE99&amp;fv=1&amp;fy=37&amp;ke=1&amp;suylg=356%2C271%2C213%2C325%2C206%2C159%2C222%2C201%2C218%2C108%2C291%2C292%2C274%2C333%2C3012%2C265%2C203%2C172%2C251%2C175%2C178%2C310%2C97%2C141%2C229%2C195%2C3010%2C209%2C263%2C272%2C219%2C282%2C241&amp;yvVbqf=1&amp;uhiXuo=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DRC_fVfq7tr_6F0Nbe2oD9o8beXoIk-IxSEe89HKFdXuiumX0UbNoj29F4e8-IWrIvqIn2dGdnPh8pGiG-6vet_%26wd%3D%26eqid%3Ded080cba000228e8000000066309682d&amp;gdpr=0&amp;gdprconsent=1&amp;gdprstring=&amp;usp_status=0&amp;usp_consent=1&amp;coppa=0" style="display: none !important;"></iframe><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="0" width="0" id="mnet" src="https://c.aaxads.com/aacxs.php?flg=AAX23QE99&amp;fv=1&amp;fy=37&amp;ke=1&amp;suylg=356%2C271%2C213%2C325%2C206%2C159%2C222%2C201%2C218%2C108%2C291%2C292%2C274%2C333%2C3012%2C265%2C203%2C172%2C251%2C175%2C178%2C310%2C97%2C141%2C229%2C195%2C3010%2C209%2C263%2C272%2C219%2C282%2C241&amp;yvVbqf=1&amp;uhiXuo=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DRC_fVfq7tr_6F0Nbe2oD9o8beXoIk-IxSEe89HKFdXuiumX0UbNoj29F4e8-IWrIvqIn2dGdnPh8pGiG-6vet_%26wd%3D%26eqid%3Ded080cba000228e8000000066309682d&amp;gdpr=0&amp;gdprconsent=1&amp;gdprstring=&amp;usp_status=0&amp;usp_consent=1&amp;coppa=0" style="display: none !important;"></iframe><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="0" width="0" id="mnet" src="https://c.aaxads.com/aacxs.php?flg=AAX23QE99&amp;fv=1&amp;fy=37&amp;ke=1&amp;suylg=356%2C271%2C213%2C325%2C206%2C159%2C222%2C201%2C218%2C108%2C291%2C292%2C274%2C333%2C3012%2C265%2C203%2C172%2C251%2C175%2C178%2C310%2C97%2C141%2C229%2C195%2C3010%2C209%2C263%2C272%2C219%2C282%2C241&amp;yvVbqf=1&amp;uhiXuo=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DRC_fVfq7tr_6F0Nbe2oD9o8beXoIk-IxSEe89HKFdXuiumX0UbNoj29F4e8-IWrIvqIn2dGdnPh8pGiG-6vet_%26wd%3D%26eqid%3Ded080cba000228e8000000066309682d&amp;gdpr=0&amp;gdprconsent=1&amp;gdprstring=&amp;usp_status=0&amp;usp_consent=1&amp;coppa=0" style="display: none !important;"></iframe><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="0" width="0" id="mnet" src="https://c.aaxads.com/aacxs.php?flg=AAX23QE99&amp;fv=1&amp;fy=37&amp;ke=1&amp;suylg=356%2C271%2C213%2C325%2C206%2C159%2C222%2C201%2C218%2C108%2C291%2C292%2C274%2C333%2C3012%2C265%2C203%2C172%2C251%2C175%2C178%2C310%2C97%2C141%2C229%2C195%2C3010%2C209%2C263%2C272%2C219%2C282%2C241&amp;yvVbqf=1&amp;uhiXuo=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DRC_fVfq7tr_6F0Nbe2oD9o8beXoIk-IxSEe89HKFdXuiumX0UbNoj29F4e8-IWrIvqIn2dGdnPh8pGiG-6vet_%26wd%3D%26eqid%3Ded080cba000228e8000000066309682d&amp;gdpr=0&amp;gdprconsent=1&amp;gdprstring=&amp;usp_status=0&amp;usp_consent=1&amp;coppa=0" style="display: none !important;"></iframe>
+
+<div id="wrapper">
+
+    <header id="header">
+        <nav class="links">
+            <ul>
+                <li><a href="https://www.freesion.com">首页</a></li>
+                <li><a href="mailto:freesion@gmx.com">联系我们</a></li>
+                <li><a href="https://www.freesion.com/copyright.html" target="_blank">版权申明</a></li>
+                <li><a href="https://www.freesion.com/privacy.html" target="_blank">隐私政策</a></li>
+            </ul>
+        </nav>
+        <nav class="main">
+            <ul>
+                <li class="search">
+                    <a class="fa-search" href="javascript:void(0)" onclick="mysubmit();">搜索</a>
+                    <form id="searchForm" name="searchForm" method="post" action="/search" onsubmit="return validate();">
+                        <input type="text" name="s" id="s" placeholder="搜索">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main"><section id="intro">
+        <a href="https://www.freesion.com" class="logo"><img src="/images/logo.jpg" alt=""></a>
+        <header>
+            <h2>灰信网<span style="font-size:13px;letter-spacing: 1px;">（软件开发博客聚合）</span></h2>
+            <p><a>程序员专属的优秀博客文章阅读平台</a></p>
+        </header>
+    </section>
+        <h2 style="font-size:25px;letter-spacing: 0px;word-break: break-all;">
+            <span>Sqoop 的基本使用</span>
+        </h2>
+        <div style="clear:both;"></div>
+        <div style="padding:5px 5px 5px 5px;word-wrap: break-word; word-break: normal;max-width: 850px;" id="article_content">
+            <div id="setupad_750_200_ads">
+            </div>
+            <div id="content_views" class="markdown_views prism-atom-one-dark">
+                <p></p><div class="toc"><h3>目录</h3><ul><ul><li><a href="#Sqoop__1" rel="nofollow,noindex" data-token="d1ba4cb8941203fdb61d1af1b77bfab8" target="">一、Sqoop 基本命令</a></li><ul><li><a href="#1__3" rel="nofollow,noindex" data-token="21b5671135fc97b292e8ce02bca46914" target="">1. 查看所有命令</a></li><li><a href="#2__13" rel="nofollow,noindex" data-token="47406eeda544ff458ed7f3973edd87f4" target="">2. 查看某条命令的具体使用方法</a></li></ul><li><a href="#Sqoop__MySQL_21" rel="nofollow,noindex" data-token="ef7b9fc5b46d0c00f0be251e5e857e14" target="">二、Sqoop 与 MySQL</a></li><ul><li><a href="#1_MySQL_23" rel="nofollow,noindex" data-token="b685fce53ed8c83110ef34d99d06c998" target="">1. 查询MySQL所有数据库</a></li><li><a href="#2__38" rel="nofollow,noindex" data-token="0fd5d376d01d93c6904207d6627e5fd7" target="">2. 查询指定数据库中所有数据表</a></li></ul><li><a href="#Sqoop__HDFS_49" rel="nofollow,noindex" data-token="f64959d806409f691cf6ad592c4ad18a" target="">三、Sqoop 与 HDFS</a></li><ul><li><a href="#31_MySQLHDFS_51" rel="nofollow,noindex" data-token="ddca8504be0abab07703b2f993c09287" target="">3.1 MySQL数据导入到HDFS</a></li><ul><li><a href="#1__53" rel="nofollow,noindex" data-token="5079d04d57aa98a86b076f79acd73000" target="">1. 导入命令</a></li><li><a href="#2__78" rel="nofollow,noindex" data-token="cb81c2c7cddbc4fc7dca80e65dafed57" target="">2. 导入验证</a></li></ul><li><a href="#32_HDFSMySQL_93" rel="nofollow,noindex" data-token="9c473a5dd8502555e40f49171dc2e3bf" target="">3.2 HDFS数据导出到MySQL</a></li></ul><li><a href="#Sqoop__Hive_114" rel="nofollow,noindex" data-token="10e5a8c8f66ecc47979efff8421f14f5" target="">四、Sqoop 与 Hive</a></li><ul><li><a href="#41_MySQLHive_116" rel="nofollow,noindex" data-token="87608c85e70706bbd448fbc4a9a425ee" target="">4.1 MySQL数据导入到Hive</a></li><ul><li><a href="#1__120" rel="nofollow,noindex" data-token="aa37938712ca479b7c92aab7ff60aa98" target="">1. 导入命令</a></li><li><a href="#2__145" rel="nofollow,noindex" data-token="6e0f94de48d24e12588d776c396e7092" target="">2. 导入验证</a></li><li><a href="#3__156" rel="nofollow,noindex" data-token="f19b71079eb918e985b0765e36d3515c" target="">3. 可能出现的问题</a></li></ul><li><a href="#42_Hive_MySQL_172" rel="nofollow,noindex" data-token="6ef08965fc579e03601da31c716fa199" target="">4.2 Hive 导出数据到MySQL</a></li><ul><li><a href="#1_HiveHDFS_176" rel="nofollow,noindex" data-token="acd71e35fad71d7604f4a1b23fd5fdc2" target="">1. 查看Hive表在HDFS的存储位置</a></li><li><a href="#32__193" rel="nofollow,noindex" data-token="0f0413e7aa146a1d6bc327a1c4447db3" target="">3.2 执行导出命令</a></li></ul></ul><li><a href="#Sqoop__HBase_214" rel="nofollow,noindex" data-token="533e17a90dc7ce1567be58160c96adea" target="">五、Sqoop 与 HBase</a></li><ul><li><a href="#51_MySQLHBase_218" rel="nofollow,noindex" data-token="01e67d432838d6c9b30bcf21d142ec3b" target="">5.1 MySQL导入数据到HBase</a></li><ul><li><a href="#1__220" rel="nofollow,noindex" data-token="80e202bf9887ad4250698ebd88ac1337" target="">1. 导入数据</a></li><li><a href="#2__246" rel="nofollow,noindex" data-token="4367f9cd7969d55b4f86308a5c1dc477" target="">2. 导入验证</a></li></ul></ul><li><a href="#_256" rel="nofollow,noindex" data-token="32f4cfa4dea7e8a35ec9185a5c9bc859" target="">六、全库导出</a></li><li><a href="#Sqoop__294" rel="nofollow,noindex" data-token="75f5040d6a4b0c6671ad286a9db2c7bc" target="">七、Sqoop 数据过滤</a></li><ul><li><a href="#71_query_296" rel="nofollow,noindex" data-token="1199d28a3a788c2de711435777022492" target="">7.1 query参数</a></li><li><a href="#72__326" rel="nofollow,noindex" data-token="34ab5e0141452353f6acefb453a79b43" target="">7.2 增量导入</a></li></ul><li><a href="#_352" rel="nofollow,noindex" data-token="e1ec33a4aeaff0322326c59f127653bb" target="">八、类型支持</a></li><li><a href="#_369" rel="nofollow,noindex" data-token="dad204504044784884366db4567251c6" target="">参考资料</a></li></ul></ul></div><p></p>
+                <h2><a id="Sqoop__1" target="_blank" rel="nofollow,noindex"></a>一、Sqoop 基本命令</h2>
+                <h3><a id="1__3" target="_blank" rel="nofollow,noindex"></a>1. 查看所有命令</h3>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)"><span class="token comment"># sqoop help</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li></ul></pre>
+                <div align="center"> <img src="/images/608/cfc01637b63a629c84efe7d9dd862340.png"> </div>
+                <br>
+                <h3><a id="2__13" target="_blank" rel="nofollow,noindex"></a>2. 查看某条命令的具体使用方法</h3>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)"><span class="token comment"># sqoop help 命令名</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li></ul></pre>
+                <h2><a id="Sqoop__MySQL_21" target="_blank" rel="nofollow,noindex"></a>二、Sqoop 与 MySQL</h2>
+                <h3><a id="1_MySQL_23" target="_blank" rel="nofollow,noindex"></a>1. 查询MySQL所有数据库</h3>
+                <p>通常用于Sqoop与MySQL连通测试：</p>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop list-databases \
+--connect jdbc:mysql://hadoop001:3306/ \
+--username root \
+--password root
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre>
+                <div align="center"> <img src="/images/594/f6eb8921ce127fae3f9399cb95b3b17a.png"> </div>
+                <br>
+                <h3><a id="2__38" target="_blank" rel="nofollow,noindex"></a>2. 查询指定数据库中所有数据表</h3>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop list-tables \
+--connect jdbc:mysql://hadoop001:3306/mysql \
+--username root \
+--password root
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre>
+                <h2><a id="Sqoop__HDFS_49" target="_blank" rel="nofollow,noindex"></a>三、Sqoop 与 HDFS</h2>
+                <h3><a id="31_MySQLHDFS_51" target="_blank" rel="nofollow,noindex"></a>3.1 MySQL数据导入到HDFS</h3>
+                <h4><a id="1__53" target="_blank" rel="nofollow,noindex"></a>1. 导入命令</h4>
+                <p>示例：导出MySQL数据库中的<code>help_keyword</code>表到HDFS的<code>/sqoop</code>目录下，如果导入目录存在则先删除再导入，使用3个<code>map tasks</code>并行导入。</p>
+                <blockquote>
+                    <p>注：help_keyword是MySQL内置的一张字典表，之后的示例均使用这张表。</p>
+                </blockquote>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop <span class="token function">import</span> \
+--connect jdbc:mysql://hadoop001:3306/mysql \
+--username root \
+--password root \
+--table help_keyword \           <span class="token comment"># 待导入的表</span>
+--delete-target-dir \            <span class="token comment"># 目标目录存在则先删除</span>
+--target-dir /sqoop \            <span class="token comment"># 导入的目标目录</span>
+--fields-terminated-by <span class="token string">'\t'</span>  \   <span class="token comment"># 指定导出数据的分隔符</span>
+-m 3                             <span class="token comment"># 指定并行执行的map tasks数量</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li></ul></pre>
+                <p>日志输出如下，可以看到输入数据被平均<code>split</code>为三份，分别由三个<code>map task</code>进行处理。数据默认以表的主键列作为拆分依据，如果你的表没有主键，有以下两种方案：</p>
+                <ul>
+                    <li>添加<code>-- autoreset-to-one-mapper</code>参数，代表只启动一个<code>map task</code>，即不并行执行；</li>
+                    <li>若仍希望并行执行，则可以使用<code>--split-by &lt;column-name&gt;</code> 指明拆分数据的参考列。</li>
+                </ul>
+                <div align="center"> <img src="/images/312/47ef58ea54b4d905056b3aa6f5c714e0.png"> </div>
+                <h4><a id="2__78" target="_blank" rel="nofollow,noindex"></a>2. 导入验证</h4>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)"><span class="token comment"># 查看导入后的目录</span>
+hadoop fs -ls  -R /sqoop
+<span class="token comment"># 查看导入内容</span>
+hadoop fs -text  /sqoop/part-m-00000
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre>
+                <p>查看HDFS导入目录,可以看到表中数据被分为3部分进行存储，这是由指定的并行度决定的。</p>
+                <div align="center"> <img src="/images/507/2fbf97df8ab4c1b92d0eb4a477a0f65b.png"> </div>
+                <br>
+                <h3><a id="32_HDFSMySQL_93" target="_blank" rel="nofollow,noindex"></a>3.2 HDFS数据导出到MySQL</h3>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop <span class="token function">export</span>  \
+    --connect jdbc:mysql://hadoop001:3306/mysql \
+    --username root \
+    --password root \
+    --table help_keyword_from_hdfs \        <span class="token comment"># 导出数据存储在MySQL的help_keyword_from_hdf的表中</span>
+    --export-dir /sqoop  \
+    --input-fields-terminated-by <span class="token string">'\t'</span>\
+    --m 3
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre>
+                <p>表必须预先创建，建表语句如下：</p>
+                <pre class="prettyprint"><code class="prism language-sql has-numbering" onclick="mdcp.copyCode(event)"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> help_keyword_from_hdfs <span class="token operator">LIKE</span> help_keyword <span class="token punctuation">;</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li></ul></pre>
+                <h2><a id="Sqoop__Hive_114" target="_blank" rel="nofollow,noindex"></a>四、Sqoop 与 Hive</h2>
+                <h3><a id="41_MySQLHive_116" target="_blank" rel="nofollow,noindex"></a>4.1 MySQL数据导入到Hive</h3>
+                <p>Sqoop导入数据到Hive是通过先将数据导入到HDFS上的临时目录，然后再将数据从HDFS上<code>Load</code>到Hive中，最后将临时目录删除。可以使用<code>target-dir</code>来指定临时目录。</p>
+                <h4><a id="1__120" target="_blank" rel="nofollow,noindex"></a>1. 导入命令</h4>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop <span class="token function">import</span> \
+  --connect jdbc:mysql://hadoop001:3306/mysql \
+  --username root \
+  --password root \
+  --table help_keyword \        <span class="token comment"># 待导入的表     </span>
+  --delete-target-dir \         <span class="token comment"># 如果临时目录存在删除</span>
+  --target-dir /sqoop_hive  \   <span class="token comment"># 临时目录位置</span>
+  --hive-database sqoop_test \  <span class="token comment"># 导入到Hive的sqoop_test数据库，数据库需要预先创建。不指定则默认为default库</span>
+  --hive-import \               <span class="token comment"># 导入到Hive</span>
+  --hive-overwrite \            <span class="token comment"># 如果Hive表中有数据则覆盖，这会清除表中原有的数据，然后再写入</span>
+  -m 3                          <span class="token comment"># 并行度</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li></ul></pre>
+                <p>导入到Hive中的<code>sqoop_test</code>数据库需要预先创建，不指定则默认使用Hive中的<code>default</code>库。</p>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)"> <span class="token comment"># 查看hive中的所有数据库</span>
+ hive<span class="token operator">&gt;</span>  SHOW DATABASES<span class="token punctuation">;</span>
+ <span class="token comment"># 创建sqoop_test数据库</span>
+ hive<span class="token operator">&gt;</span>  CREATE DATABASE sqoop_test<span class="token punctuation">;</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre>
+                <h4><a id="2__145" target="_blank" rel="nofollow,noindex"></a>2. 导入验证</h4>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)"><span class="token comment"># 查看 sqoop_test 数据库的所有表</span>
+ hive<span class="token operator">&gt;</span>  SHOW  TABLES  IN  sqoop_test<span class="token punctuation">;</span>
+<span class="token comment"># 查看表中数据</span>
+ hive<span class="token operator">&gt;</span> SELECT * FROM sqoop_test.help_keyword<span class="token punctuation">;</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre>
+                <div align="center"> <img src="/images/160/0199329d1a2b6a7b776dfda1b6e5b318.png"> </div>
+                <h4><a id="3__156" target="_blank" rel="nofollow,noindex"></a>3. 可能出现的问题</h4>
+                <div align="center"> <img src="/images/133/b6640b8ce354ae4b89e9f117539e048d.png"> </div>
+                <br>
+                <p>如果执行报错<code>java.io.IOException: java.lang.ClassNotFoundException: org.apache.hadoop.hive.conf.HiveConf</code>，则需将Hive安装目录下<code>lib</code>下的<code>hive-exec-**.jar</code>放到sqoop 的<code>lib</code> 。</p>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)"><span class="token punctuation">[</span>root@hadoop001 lib<span class="token punctuation">]</span><span class="token comment"># ll hive-exec-*</span>
+-rw-r--r--. 1 1106 4001 19632031 11月 13 21:45 hive-exec-1.1.0-cdh5.15.2.jar
+<span class="token punctuation">[</span>root@hadoop001 lib<span class="token punctuation">]</span><span class="token comment"># cp hive-exec-1.1.0-cdh5.15.2.jar  ${SQOOP_HOME}/lib</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li></ul></pre>
+                <br>
+                <h3><a id="42_Hive_MySQL_172" target="_blank" rel="nofollow,noindex"></a>4.2 Hive 导出数据到MySQL</h3>
+                <p>由于Hive的数据是存储在HDFS上的，所以Hive导入数据到MySQL，实际上就是HDFS导入数据到MySQL。</p>
+                <h4><a id="1_HiveHDFS_176" target="_blank" rel="nofollow,noindex"></a>1. 查看Hive表在HDFS的存储位置</h4>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)"><span class="token comment"># 进入对应的数据库</span>
+hive<span class="token operator">&gt;</span> use sqoop_test<span class="token punctuation">;</span>
+<span class="token comment"># 查看表信息</span>
+hive<span class="token operator">&gt;</span> desc formatted help_keyword<span class="token punctuation">;</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre>
+                <p><code>Location</code>属性为其存储位置：</p>
+                <div align="center"> <img src="/images/30/09753a65295210a78a4e845c7ef1aa66.png"> </div>
+                <p>这里可以查看一下这个目录，文件结构如下：</p>
+                <div align="center"> <img src="/images/155/f9769ce1dba8985d78285169a836029b.png"> </div>
+                <h4><a id="32__193" target="_blank" rel="nofollow,noindex"></a>3.2 执行导出命令</h4>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop <span class="token function">export</span>  \
+    --connect jdbc:mysql://hadoop001:3306/mysql \
+    --username root \
+    --password root \
+    --table help_keyword_from_hive \
+    --export-dir /user/hive/warehouse/sqoop_test.db/help_keyword  \
+    -input-fields-terminated-by <span class="token string">'\001'</span> \             <span class="token comment"># 需要注意的是 hive 中默认的分隔符为 \001</span>
+    --m 3
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre>
+                <p>MySQL中的表需要预先创建：</p>
+                <pre class="prettyprint"><code class="prism language-sql has-numbering" onclick="mdcp.copyCode(event)"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> help_keyword_from_hive <span class="token operator">LIKE</span> help_keyword <span class="token punctuation">;</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li></ul></pre>
+                <h2><a id="Sqoop__HBase_214" target="_blank" rel="nofollow,noindex"></a>五、Sqoop 与 HBase</h2>
+                <blockquote>
+                    <p>本小节只讲解从RDBMS导入数据到HBase，因为暂时没有命令能够从HBase直接导出数据到RDBMS。</p>
+                </blockquote>
+                <h3><a id="51_MySQLHBase_218" target="_blank" rel="nofollow,noindex"></a>5.1 MySQL导入数据到HBase</h3>
+                <h4><a id="1__220" target="_blank" rel="nofollow,noindex"></a>1. 导入数据</h4>
+                <p>将<code>help_keyword</code>表中数据导入到HBase上的 <code>help_keyword_hbase</code>表中，使用原表的主键<code>help_keyword_id</code>作为<code>RowKey</code>，原表的所有列都会在<code>keywordInfo</code>列族下，目前只支持全部导入到一个列族下，不支持分别指定列族。</p>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop <span class="token function">import</span> \
+    --connect jdbc:mysql://hadoop001:3306/mysql \
+    --username root \
+    --password root \
+    --table help_keyword \              <span class="token comment"># 待导入的表</span>
+    --hbase-table help_keyword_hbase \  <span class="token comment"># hbase 表名称，表需要预先创建</span>
+    --column-family keywordInfo \       <span class="token comment"># 所有列导入到 keywordInfo 列族下 </span>
+    --hbase-row-key help_keyword_id     <span class="token comment"># 使用原表的help_keyword_id作为RowKey</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre>
+                <p>导入的HBase表需要预先创建：</p>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)"><span class="token comment"># 查看所有表</span>
+hbase<span class="token operator">&gt;</span> list
+<span class="token comment"># 创建表</span>
+hbase<span class="token operator">&gt;</span> create <span class="token string">'help_keyword_hbase'</span>, <span class="token string">'keywordInfo'</span>
+<span class="token comment"># 查看表信息</span>
+hbase<span class="token operator">&gt;</span> desc <span class="token string">'help_keyword_hbase'</span>
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li></ul></pre>
+                <h4><a id="2__246" target="_blank" rel="nofollow,noindex"></a>2. 导入验证</h4>
+                <p>使用<code>scan</code>查看表数据：</p>
+                <div align="center"> <img src="/images/185/b2090b109c4a3371af121dc573569481.png"> </div>
+                <h2><a id="_256" target="_blank" rel="nofollow,noindex"></a>六、全库导出</h2>
+                <p>Sqoop支持通过<code>import-all-tables</code>命令进行全库导出到HDFS/Hive，但需要注意有以下两个限制：</p>
+                <ul>
+                    <li>所有表必须有主键；或者使用<code>--autoreset-to-one-mapper</code>，代表只启动一个<code>map task</code>;</li>
+                    <li>你不能使用非默认的分割列，也不能通过WHERE子句添加任何限制。</li>
+                </ul>
+                <blockquote>
+                    <p>第二点解释得比较拗口，这里列出官方原本的说明：</p>
+                    <ul>
+                        <li>You must not intend to use non-default splitting column, nor impose any conditions via a <code>WHERE</code> clause.</li>
+                    </ul>
+                </blockquote>
+                <p>全库导出到HDFS：</p>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop import-all-tables \
+    --connect jdbc:mysql://hadoop001:3306/数据库名 \
+    --username root \
+    --password root \
+    --warehouse-dir  /sqoop_all \     <span class="token comment"># 每个表会单独导出到一个目录，需要用此参数指明所有目录的父目录</span>
+    --fields-terminated-by <span class="token string">'\t'</span>  \
+    -m 3
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li></ul></pre>
+                <p>全库导出到Hive：</p>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop import-all-tables -Dorg.apache.sqoop.splitter.allow_text_splitter<span class="token operator">=</span>true \
+  --connect jdbc:mysql://hadoop001:3306/数据库名 \
+  --username root \
+  --password root \
+  --hive-database sqoop_test \         <span class="token comment"># 导出到Hive对应的库   </span>
+  --hive-import \
+  --hive-overwrite \
+  -m 3
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre>
+                <h2><a id="Sqoop__294" target="_blank" rel="nofollow,noindex"></a>七、Sqoop 数据过滤</h2>
+                <h3><a id="71_query_296" target="_blank" rel="nofollow,noindex"></a>7.1 query参数</h3>
+                <p>Sqoop支持使用<code>query</code>参数定义查询SQL，从而可以导出任何想要的结果集。使用示例如下：</p>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop <span class="token function">import</span> \
+  --connect jdbc:mysql://hadoop001:3306/mysql \
+  --username root \
+  --password root \
+  --query <span class="token string">'select * from help_keyword where  <span class="token variable">$CONDITIONS</span> and  help_keyword_id &lt; 50'</span> \
+  --delete-target-dir \
+  --target-dir /sqoop_hive  \
+  --hive-database sqoop_test \           <span class="token comment"># 指定导入目标数据库 不指定则默认使用Hive中的default库</span>
+  --hive-table filter_help_keyword \     <span class="token comment"># 指定导入目标表</span>
+  --split-by help_keyword_id \           <span class="token comment"># 指定用于split的列      </span>
+  --hive-import \                        <span class="token comment"># 导入到Hive</span>
+  --hive-overwrite \                     、
+  -m 3
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li></ul></pre>
+                <p>在使用<code>query</code>进行数据过滤时，需要注意以下三点：</p>
+                <ul>
+                    <li>
+                        <p>必须用<code>--hive-table</code>指明目标表；</p>
+                    </li>
+                    <li>
+                        <p>如果并行度<code>-m</code>不为1或者没有指定<code>--autoreset-to-one-mapper</code>，则需要用<code>--split-by</code>指明参考列；</p>
+                    </li>
+                    <li>
+                        <p>SQL的<code>where</code>字句必须包含<code>$CONDITIONS</code>，这是固定写法，作用是动态替换。</p>
+                    </li>
+                </ul>
+                <h3><a id="72__326" target="_blank" rel="nofollow,noindex"></a>7.2 增量导入</h3>
+                <pre class="prettyprint"><code class="prism language-shell has-numbering" onclick="mdcp.copyCode(event)">sqoop <span class="token function">import</span> \
+    --connect jdbc:mysql://hadoop001:3306/mysql \
+    --username root \
+    --password root \
+    --table help_keyword \
+    --target-dir /sqoop_hive  \
+    --hive-database sqoop_test \
+    --incremental  append  \             <span class="token comment"># 指明模式</span>
+    --check-column  help_keyword_id \    <span class="token comment"># 指明用于增量导入的参考列</span>
+    --last-value 300  \                  <span class="token comment"># 指定参考列上次导入的最大值</span>
+    --hive-import \
+    -m 3
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li></ul></pre>
+                <p><code>incremental</code>参数有以下两个可选的选项：</p>
+                <ul>
+                    <li><strong>append</strong>：要求参考列的值必须是递增的，所有大于<code>last-value</code>的值都会被导入；</li>
+                    <li><strong>lastmodified</strong>：要求参考列的值必须是<code>timestamp</code>类型，且插入数据时候要在参考列插入当前时间戳，更新数据时也要更新参考列的时间戳，所有时间晚于<code>last-value</code>的数据都会被导入。</li>
+                </ul>
+                <p>通过上面的解释我们可以看出来，其实Sqoop的增量导入并没有太多神器的地方，就是依靠维护的参考列来判断哪些是增量数据。当然我们也可以使用上面介绍的<code>query</code>参数来进行手动的增量导出，这样反而更加灵活。</p>
+                <h2><a id="_352" target="_blank" rel="nofollow,noindex"></a>八、类型支持</h2>
+                <p>Sqoop默认支持数据库的大多数字段类型，但是某些特殊类型是不支持的。遇到不支持的类型，程序会抛出异常<code>Hive does not support the SQL type for column xxx</code>异常，此时可以通过下面两个参数进行强制类型转换：</p>
+                <ul>
+                    <li><strong>–map-column-java&lt;mapping&gt;</strong> ：重写SQL到Java类型的映射；</li>
+                    <li><strong>–map-column-hive &lt;mapping&gt;</strong> ： 重写Hive到Java类型的映射。</li>
+                </ul>
+                <p>示例如下，将原先<code>id</code>字段强制转为String类型，<code>value</code>字段强制转为Integer类型：</p>
+                <pre class="prettyprint"><code class="has-numbering" onclick="mdcp.copyCode(event)">$ sqoop import ... --map-column-java id=String,value=Integer
+<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li></ul></pre>
+                <h2><a id="_369" target="_blank" rel="nofollow,noindex"></a>参考资料</h2>
+                <p><a href="https://sqoop.apache.org/docs/1.4.7/SqoopUserGuide.html" rel="nofollow,noindex" data-token="2411bc2bb4e364da41a57ae12c313b56" target="_blank">Sqoop User Guide (v1.4.7)</a></p>
+                <blockquote>
+                    <p>更多大数据系列文章可以参见个人 GitHub 开源项目： <a href="https://github.com/heibaiying/BigData-Notes" rel="nofollow,noindex" data-token="10d1bc3d93f76f76c73da590c2138149" target="_blank">程序员大数据入门指南</a></p>
+                </blockquote>
+            </div><div id="similarBeans">
+        </div>
+        </div>
+        <div style="float:right;">
+            <div class="article-copyright">
+<span class="creativecommons"> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"> </a> <span>
+版权声明：本文为m0_37809146原创文章，遵循<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。
+</span>
+<div class="article-source-link2222">
+本文链接：<a href="https://blog.csdn.net/m0_37809146/article/details/91127801" target="_blank">https://blog.csdn.net/m0_37809146/article/details/91127801</a>
+</div>
+</span>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+        <div id="setupad_728_90_ads" style="margin-top:10px;">
+            <div id="right_tmt_ads1" style="text-align:center;width:100%;height:90px;margin-bottom:30px;" class="dotloading"><div id="75988-1"><script src="//ads.themoneytizer.com/s/gen.js?type=1"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=75988&amp;formatId=1"></script><div id="sas_26322" style="width: 728px; height: 90px; margin: auto;"></div></div></div>
+        </div>
+        <hr>
+        <h3><span>智能推荐</span></h3>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/1432517918/"><img style="width:172px;height:120px;" src="/thumbs/305/d14eb48c8a88eb5bedee88b573b635c9.png">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/1432517918/" rel="bookmark" title="volatile不具备原子性">volatile不具备原子性</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">最后的count并不为零。 Java提供了volatile关键字来保证可见性、有序性。但不保证原子性。 c+=3，可以拆分成三部，读取c，加3，写回内存。线程1对变量进行自增操作，线程1先读取了变量count的原始值，然后线程1被阻塞了；然后线程2对变量进行自增操作，线程2也去读取变量count的原始值，由于线程1只是对变量count进行读取操作，而没有对变量进行修改操作，所以不会导致线程2的工作...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="google-auto-placed" style="clear: none; padding: 0px; margin: 0px; box-sizing: content-box; width: auto; height: 121px;"><ins data-ad-type="text" data-native-settings-key="17381759" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-5682231266612128" data-adsbygoogle-status="done" style="width: 100%; height: 121px; display: inline-block;"><div id="aswift_1_host" style="border: none; height: 121px; width: 991px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins></div><div class="google-auto-placed" style="clear: none; padding: 0px; margin: 0px; box-sizing: content-box; width: auto; height: 121px;"><ins data-ad-type="text" data-native-settings-key="2aefc71c" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-5682231266612128" data-adsbygoogle-status="done" style="width: 100%; height: 121px; display: inline-block;"><div id="aswift_2_host" style="border: none; height: 121px; width: 991px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins></div>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/5812546890/"><img style="width:172px;height:120px;" src="/thumbs/830/1b306fb9486d1116ad68d46933217bc6.png">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/5812546890/" rel="bookmark" title="SpringCloud入门学习笔记6--Spring Cloud Config 配置中心">SpringCloud入门学习笔记6--Spring Cloud Config 配置中心</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">一、Spring Cloud Config简介 在分布式系统中，由于服务数量巨多，为了方便服务配置文件统一管理，实时更新，所以需要分布式配置中心组件。在Spring Cloud中，有分布式配置中心组件spring cloud config ，它支持配置服务放在配置服务的内存中（即本地），也支持放在远程Git仓库中。在spring cloud config 组件中，分两个角色，一是config se...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/5323369429/"><img style="width:172px;height:120px;" src="/thumbs/670/de4953767d66a624bb7f23a1d7e57856.png">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/5323369429/" rel="bookmark" title="JAVA 性能调优相关命令">JAVA 性能调优相关命令</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">线上故障主要会包括cpu、磁盘、内存以及网络问题，而大多数故障可能会包含不止一个层面的问题，所以进行排查时候尽量四个方面依次排查一遍。同时例如jstack、jmap等工具也是不囿于一个方面的问题的，基本上出问题就是df、free、top 三连，然后依次jstack、jmap伺候，具体问题具体分析即可。 CPU 一般来讲我们首先会排查cpu方面的问题。cpu异常往往还是比较好定位的。原因包括业务逻辑...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="google-auto-placed" style="clear: none; padding: 0px; margin: 0px; box-sizing: content-box; width: auto; height: 121px;"><ins data-ad-type="text" data-native-settings-key="810eb9fb" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-5682231266612128" data-adsbygoogle-status="done" style="width: 100%; height: 121px; display: inline-block;"><div id="aswift_3_host" style="border: none; height: 121px; width: 991px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins></div>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/64821325241/"><img style="width:172px;height:120px;" src="/thumbs/214/4efea7ed5807cde1bef6d76589ae43c6.png">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/64821325241/" rel="bookmark" title="『容斥』51nod 1407 与与与与">『容斥』51nod 1407 与与与与</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">P r o b l e m \mathrm{Problem} Problem S o l u t i o n \mathrm{Solution} Solution 这道题的方向不是 O ( n ) O(n) O(n),而是 O ( v ) O(v) O(v)。 我们发现答案为：全集 − a n d -\mathrm{and} −and有至少 1 1 1 位 0 0 0 的 ...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/29291074273/"><img style="width:172px;height:120px;" src="/thumbs/713/99a76a3af0f59f2af169b2b2144869d1.png">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/29291074273/" rel="bookmark" title="线索化二叉树">线索化二叉树</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">线索化二叉树 中序线索化遍历只能是中序线索化后的二叉树 前序线索化遍历只能是前序线索化后的二叉树 后序线索化遍历只能是后序线索化后的二叉树 后序线索化比较复杂。 中序线索化 前序线索化 后序线索化 二叉树节点 线索化二叉树[中序、前序、后序] 线索化遍历 ThreadedBinaryTreeDemo 后序线索化遍历参考： 后序线索化二叉树（Java版）...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="google-auto-placed" style="clear: none; padding: 0px; margin: 0px; box-sizing: content-box; width: auto; height: 121px;"><ins data-ad-type="text" data-native-settings-key="84735cdf" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-5682231266612128" data-adsbygoogle-status="done" style="width: 100%; height: 121px; display: inline-block;"><div id="aswift_4_host" style="border: none; height: 121px; width: 991px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins></div>
+        <div id="right_tmt_ads2" style="text-align:center;width:100%;height:90px;" class="dotloading"><div id="75988-28"><script src="//ads.themoneytizer.com/s/gen.js?type=28"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=75988&amp;formatId=28"></script><div id="sas_30012" style="width: 728px; height: 90px; margin: auto;"></div></div></div>
+        <h3><span>猜你喜欢</span></h3>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/2973942730/"><img style="width:172px;height:120px;" src="/thumbs/840/30158013fdbf7d3f641f35386894d5c0.png">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/2973942730/" rel="bookmark" title="docker的基础命令与用镜像快速搭建小游戏、nginx和交互式ubuntu">docker的基础命令与用镜像快速搭建小游戏、nginx和交互式ubuntu</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">Docker 是一个开源的应用容器引擎,主要利用 linux 内核 namespace 实现沙盒隔离,用cgroup 实现资源限制。 Docker 支持三种不同的镜像层次存储的 drivers:aufs、devicemapper、btrfs ; Aufs: AUFS (AnotherUnionFS) 是一种 Union FS, 简单来说就是支持将不同目录挂载到同一个虚 拟 文 件 系 统 下 (u...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/4137921141/"><img style="width:172px;height:120px;" src="/thumbs/53/92d69c3e9d3b1a79e763c49851041cdd.png">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/4137921141/" rel="bookmark" title="Maven学习笔记-基础">Maven学习笔记-基础</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">Maven学习笔记-基础 文章目录 Maven学习笔记-基础 1.介绍 安装包的内容 命令行使用 jar包查找运行过程 设置本地仓库地址 标准目录结构 Maven常见命令 生命周期 maven 概念模型图 idea中使用 配置 新建项目 作用域scope 简单的web项目 2 与mysql连用 1.介绍 试想，如果现在有一种工具，可以把你从上面的繁琐工作中解放出来，能帮你构建工程，管理jar包，编...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/3331698923/"><img style="width:172px;height:120px;" src="/thumbs/160/0a5b9a8bceba8adc0d0feb18391e4580.gif">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/3331698923/" rel="bookmark" title="python基础——循环语句">python基础——循环语句</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">Python 中的循环语句有 for 和 while。 控制结构图如下： while 循环 while 语句的一般形式： 同样需要注意冒号和缩进。另外，在 Python 中没有 do…while 循环。 举例：计算1到100的和 无限循环 通过设置条件表达式永远不为 false 来实现无限循环，使用 CTRL+C 来退出当前的无限循环。 while 循环使用 else 语句 在 wh...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/1819854995/"><img style="width:172px;height:120px;" src="/thumbs/900/0f116ed09c6e364a99f09f8b35143c0c.png">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/1819854995/" rel="bookmark" title="101. 对称二叉树">101. 对称二叉树</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">对称二叉树 给定一个二叉树，检查它是否是镜像对称的。 方法一：递归 复杂度分析 假设树上一共 n 个节点。 时间复杂度：这里遍历了这棵树，渐进时间复杂度为 O(n)。 空间复杂度：这里的空间复杂度和递归使用的栈空间有关，这里递归层数不超过 nn，故渐进空间复杂度为 O(n)。 方法二：迭代用队列实现 时间复杂度是 O(n)，空间复杂度是 O(n)...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div style="padding-top:6px;padding-bottom:6px;">
+                    <div class="loop-wrap clearfix">
+                        <div class="loop-thumb">
+                            <a href="/article/4252916105/"><img style="width:172px;height:120px;" src="/thumbs/388/12cbb4a888b56fed319b535831712474.JPEG">
+                            </a>
+                        </div>
+                        <header class="loop-data">
+                            <h3 style="margin-top:0px;border-bottom-style: none;padding-bottom: 0px;margin-bottom: 0px;line-height:30px;">
+                                <a href="/article/4252916105/" rel="bookmark" title="微服务概念解析">微服务概念解析</a>
+                            </h3>
+                        </header>
+                        <div class="mh-excerpt">
+                            <p style="line-height:25px;">微服务概念解析（上） 　　探讨这一全新架构术语的确切定义 　　“微服务架构”概念的提出已经有很长一段时间了，但在最近几年却开始频繁地出现。微服务架构是一种特定的软件应用程序设计方式——将大型软件拆分为多个独立可部署服务组合而成的套件方案。虽然这种架构风格的确切定义还存在争议，但并不妨碍其在众多企业的实际应用中被实践，并体现出了具备通用特征的业务功能、...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="sidebar" style="position: -webkit-sticky;position: sticky;top: 0;align-self: flex-start;">
+
+
+
+        <section>
+            <div id="setupad_300_250_ads">
+            </div>
+            <div class="mini-posts" style="margin-bottom: 0px;">
+                <fieldset>
+                    <legend style="padding-bottom:10px;font-weight: bolder;">相关文章</legend>
+
+                    <ul style="list-style: none;">
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/8285394902/" title="sqoop基本使用">sqoop基本使用</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/6951189756/" title="Sqoop使用">Sqoop使用</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/5074181894/" title="Sqoop的安装及基本使用">Sqoop的安装及基本使用</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/8948639497/" title="Sqoop安装及基本使用">Sqoop安装及基本使用</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/37461223704/" title="Sqoop的简单使用">Sqoop的简单使用</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/47021312349/" title="Sqoop的使用">Sqoop的使用</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/6487683961/" title="sqoop基本操作">sqoop基本操作</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/1069233680/" title="ubuntu系统备份方法">ubuntu系统备份方法</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/14161418459/" title="【干货】Python的10个特殊知识点">【干货】Python的10个特殊知识点</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/27991014372/" title="学习HTML笔记1">学习HTML笔记1</a></h3>
+                            </header>
+                        </article>
+                    </ul>
+                </fieldset>
+            </div>
+            <div id="left-mid1-ads" style="text-align:center;width:100%;height:600px;" class="dotloading"><div id="75988-3"><script src="//ads.themoneytizer.com/s/gen.js?type=3"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=75988&amp;formatId=3"></script><div id="sas_26323"></div></div></div>
+            <div class="mini-posts" style="margin-bottom: 0px;">
+                <fieldset>
+                    <legend style="padding-bottom:10px;font-weight: bolder;">热门文章</legend>
+
+                    <ul style="list-style: none;">
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/6008110069/" title="1030. 距离顺序排列矩阵单元格">1030. 距离顺序排列矩阵单元格</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/6840745658/" title="RNN &amp; LSTM 学习笔记 —— Anaconda安装，Python安装，PyTorch，Tensorflow配置">RNN &amp; LSTM 学习笔记 —— Anaconda安装，Python安装，PyTorch，Tensorflow配置</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/88841477942/" title="关于Tensorflow2降版本tf1问题">关于Tensorflow2降版本tf1问题</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/3446861026/" title="jquery通知插件toastr">jquery通知插件toastr</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/30401196463/" title="Android 常用控件（三）">Android 常用控件（三）</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/15531268241/" title="Spring Data">Spring Data</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/555955460/" title="利用python循环进行单元测试，用来验证因果图组合场景">利用python循环进行单元测试，用来验证因果图组合场景</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/6520446642/" title="基于Java8的ArrayList常用方法详解">基于Java8的ArrayList常用方法详解</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/6270207915/" title="python-turtle画树注释版">python-turtle画树注释版</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/703899019/" title="Spark 系列（十二）——  Spark SQL JOIN操作">Spark 系列（十二）—— Spark SQL JOIN操作</a></h3>
+                            </header>
+                        </article>
+                    </ul>
+                </fieldset>
+            </div>
+            <div id="setupad_300_600_ads">
+            </div>
+            <div class="mini-posts" style="margin-bottom: 0px;">
+                <fieldset>
+                    <legend style="padding-bottom:10px;font-weight: bolder;">推荐文章</legend>
+
+                    <ul style="list-style: none;">
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/230371843/" title="内存泄露分析实战演练">内存泄露分析实战演练</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/54092241691/" title="JAVA学习-File">JAVA学习-File</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/39941060793/" title="基于python的数据结构和算法（北京大学）第六章（贪心策略和动态规划）">基于python的数据结构和算法（北京大学）第六章（贪心策略和动态规划）</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/2682852802/" title="阿里云 Centos 搭建ElasticSearch、Kabanna环境">阿里云 Centos 搭建ElasticSearch、Kabanna环境</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/3226640786/" title="java8 -list">java8 -list</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/96611083336/" title="简单的零配置命令行 http 服务器--http-server入门">简单的零配置命令行 http 服务器--http-server入门</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/88951372976/" title="【PWN系列】攻防世界pwn进阶区welpwn分析">【PWN系列】攻防世界pwn进阶区welpwn分析</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/78951379958/" title="Java模拟物流快递系统程序设计（此题仅仅实现类的继承与多态，后续增加接口部分）">Java模拟物流快递系统程序设计（此题仅仅实现类的继承与多态，后续增加接口部分）</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/50021113239/" title="Android 高德地图Key的配置">Android 高德地图Key的配置</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/article/6450994668/" title="Datatables(1.10以上版本)服务器端分页(Java)">Datatables(1.10以上版本)服务器端分页(Java)</a></h3>
+                            </header>
+                        </article>
+                    </ul>
+                </fieldset>
+            </div>
+            <div id="left_tmt_ads2" style="text-align:center;width:100%;height:250px;" class="dotloading"><div id="75988-2"><script src="//ads.themoneytizer.com/s/gen.js?type=2"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=75988&amp;formatId=2"></script><div id="sas_26300" style="width: 300px; height: 250px; margin: auto;"></div></div></div>
+            <div class="mini-posts" style="margin-bottom: 0px;">
+                <fieldset>
+                    <legend style="padding-bottom:10px;font-weight: bolder;">相关标签</legend>
+
+                    <ul style="list-style: none;">
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/Sqoop/" title="Sqoop">Sqoop</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="大数据">大数据</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/hadoop/" title="hadoop">hadoop</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/mysql/" title="mysql">mysql</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/sqoop/" title="sqoop">sqoop</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/ubuntu/" title="ubuntu">ubuntu</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80/" title="脚本语言">脚本语言</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/%E6%B8%B8%E6%88%8F/" title="游戏">游戏</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="编程语言">编程语言</a></h3>
+                            </header>
+                        </article>
+                        <article class="mini-post" style="margin-bottom: 5px;">
+                            <header style="padding-top: 0.25em;padding-bottom: 0.25em;min-height: 2em;">
+                                <h3 style="font-weight: normal;margin-bottom: 0px;"><a href="/tag/python/" title="python">python</a></h3>
+                            </header>
+                        </article>
+                    </ul>
+                </fieldset>
+            </div>
+            <div id="left-bottom-ads" style="text-align:center;width:100%;height:250px;" class="dotloading"><div id="75988-19"><script src="//ads.themoneytizer.com/s/gen.js?type=19"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=75988&amp;formatId=19"></script><div id="sas_26711" style="width: 300px; height: 250px; margin: auto;"></div></div></div>
+        </section>
+        <div id="setupad_anchor_970_90">
+        </div>
+
+        <section id="footer">
+            <p class="copyright">Copyright © 2010-2022 - All Rights Reserved - <a href="https://www.freesion.com">www.freesion.com</a></p>
+        </section>
+    </section>
+</div><iframe name="__tcfapiLocator" style="display: none;"></iframe>
+
+<script src="/assets/js/jquery.min.js"></script><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&amp;us_privacy=1---&amp;client=ca-pub-5682231266612128&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1661560977&amp;plat=2%3A16777216%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fwww.freesion.com%2Farticle%2F92811308451%2F&amp;ea=0&amp;pra=5&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTAwLjAuNDg5Ni43NSIsW10sZmFsc2UsbnVsbCwiNjQiLFtbIiBOb3QgQTtCcmFuZCIsIjk5LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjEwMC4wLjQ4OTYuNzUiXSxbIkdvb2dsZSBDaHJvbWUiLCIxMDAuMC40ODk2Ljc1Il1dLGZhbHNlXQ..&amp;dt=1661560976508&amp;bpp=3&amp;bdt=1685&amp;idt=201&amp;shv=r20220822&amp;mjsv=m202208220101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D737973542ea383b4-224480923bd500fd%3AT%3D1658191253%3ART%3D1658191253%3AS%3DALNI_MalrzPX22s61ndmK37HP7xlrUdoTg&amp;gpic=UID%3D000007d8893b31c1%3AT%3D1658191253%3ART%3D1658491761%3AS%3DALNI_MYrYd2cyDHpG9m-Qtxm0GrjEIC3Vg&amp;nras=1&amp;correlator=3735836245566&amp;frm=20&amp;pv=2&amp;ga_vid=1125861409.1661560978&amp;ga_sid=1661560978&amp;ga_hid=1387620937&amp;ga_fc=0&amp;u_tz=480&amp;u_his=1&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1519&amp;bih=754&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C31069063%2C31069108%2C31067825&amp;oid=2&amp;pvsid=2401232290098752&amp;tmod=2068791660&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DRC_fVfq7tr_6F0Nbe2oD9o8beXoIk-IxSEe89HKFdXuiumX0UbNoj29F4e8-IWrIvqIn2dGdnPh8pGiG-6vet_%26wd%3D%26eqid%3Ded080cba000228e8000000066309682d&amp;eae=2&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C824%2C1536%2C754&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=1005" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/hljs_new.js" type="text/javascript"></script><script type="text/javascript" id="">!function(a,c,b,f,d,h,k,e,g){a[d]=a[d]||[];a[b]=a[b]||{};a[b][e]=g;a[b].Y=20;b=c.getElementsByTagName(f)[0];e={};g=h+".js";c=c.createElement(f);f="dataLayer"!=d?"\x26l\x3d"+d:"";e[h+".start"]=(new Date).getTime();e.event=g;a[d].push(e);c.async=!0;c.src="https://www.googletagmanager.com/"+g+"?id\x3d"+k+f;b.parentNode.insertBefore(c,b)}(window,document,google_tag_manager["GTM-PC2RG39"].macro(2),"script","dataLayer","gtm",google_tag_manager["GTM-PC2RG39"].macro(3),google_tag_manager["GTM-PC2RG39"].macro(4),google_tag_manager["GTM-PC2RG39"].macro(5));</script>
+<script src="/assets/js/md.js" type="text/javascript"></script>
+<script>
+		if($('div.markdown_views pre.prettyprint code.hljs').length > 0 ){
+				$('div.markdown_views')[0].className = 'markdown_views';
+		}
+</script>
+<script src="/assets/js/viewer.min.js"></script>
+<script>
+var viewer = new Viewer(document.getElementById('article_content'));
+</script>
+<script src="/js/freesion.js"></script><script type="text/javascript" src="//js.users.51.la/20650105.js"></script><script type="text/javascript" id="">!function(h,c,f,n,p,x,q,y,z,A,B,g,C){window[c()]=window[c()]||{};var a=window[c()];g="L";var r="K",t=!0,d=g+g,D="C"+d,u=function(){for(var b in a[d])clearInterval(a[d][b]),clearTimeout(a[d][b]);a[d]={}},k=function(){for(var b=0;5>b;b++)f("//")},l=function(b){if(b||a.url!=h.href){k();f("NEW PAGE PREPARATION");k();a.I=Date.now();a.url=h.href;a[r]=function(e,v){(a[r]=e)&&(e={reason:e});for(var w in v)e[w]=v[w];C("dblck","dns",e)};if(!t&&(q("previous page cleanup"),u(),p("DBSINGLEPAGE")))return q("new page preparation inhibited");
+k();t=!1;n("new-page")}};a.E=p;a[g]=x;a[d]={};a[D]=u;a.N=function(){f("REQUESTING NP");l(!0)};a.X=y;a.I=Date.now();a.O=A;f(c(2)+" ROOT - V"+B);n(c(1)+"-init");l();setInterval(l,200);var m=[[/latribune/,9945624415527048]];c=function(){for(var b=0;b<m.length;b++)if(m[b][0].test(h.hostname))return m[b][1]}();z(c,0!=c)}(location,google_tag_manager["GTM-WS7SWNV"].macro(8),google_tag_manager["GTM-WS7SWNV"].macro(12),google_tag_manager["GTM-WS7SWNV"].macro(17),google_tag_manager["GTM-WS7SWNV"].macro(18),google_tag_manager["GTM-WS7SWNV"].macro(20),google_tag_manager["GTM-WS7SWNV"].macro(23),google_tag_manager["GTM-WS7SWNV"].macro(36),google_tag_manager["GTM-WS7SWNV"].macro(59),
+google_tag_manager["GTM-WS7SWNV"].macro(127),google_tag_manager["GTM-WS7SWNV"].macro(128),google_tag_manager["GTM-WS7SWNV"].macro(216),google_tag_manager["GTM-WS7SWNV"].macro(267));</script><script type="text/javascript" id="">!function(a,b){a("tag ready V"+b)}(google_tag_manager["GTM-PC2RG39"].macro(269),google_tag_manager["GTM-PC2RG39"].macro(270));</script><script type="text/javascript" id="">!function(f,q,k,g,r,A,B,C,h){window[f()]=window[f()]||{};var c=window[f()],e=function(a){return h("consent",a,"CMP")},l=18E5,t=f(3)+"ps",m=function(){var a=document.cookie,b=a.indexOf(t);if(-1!=b){var d=a.indexOf(";",b);-1==d&&(d=void 0);return a.substring(a.indexOf("\x3d",b)+1,d)}}(),n=function(a,b){var d=parseInt(a);a=isNaN(d)?a:d+1;b=t+"\x3d"+a+"; expires\x3d"+b+" path\x3d/;";document.cookie=b;return a},p,u=0;f=100;var v=250,D=10,w=function(){__tcfapi("ping",2,function(a){var b=a.displayStatus;
+a=a.cmpStatus;if("stub"==a)throw e(4)+" LOADING";return"loaded"!=a||"hidden"!=b&&"disabled"!=b?p=!1:p=!0})};m&&(c.S=n(m,l));var x=setInterval(function(){u+=v;try{w()}catch(a){g("PING ERROR")}if(!p)return c.C=u;k(e(2)+" CHOICE RECORDED");clearInterval(x);c.C=!0;__tcfapi("getTCData",2,function(a,b){k(a);b=a.purpose;a=a.vendor;var d=720,y="1";if(!b.consents[y]&&!b.legitimateInterests[y])return c.S=n("NC",l),g(h("publisher",void 0)+" "+e()+" denied"),c.K("NO CONSENT");m||(c.S=n(0,l));if(!a.consents[d]&&
+!a.legitimateInterests[d])return c.K("CMP VENDORLIST INCOMPLETE");try{var z=c.R;"function"==typeof z&&r()&&setTimeout(function(){z()},150)}catch(E){g("refresh on "+e()+" failed : "+E)}})},v);q(w,"TCF PING",D,f,function(){g(h("publisher",2)+" "+e(4)+" NOT WORKING");q(function(){if((A(/DBCMP/)||C||1==c.F)&&r()&&900<window.innerWidth)return B(),k("overriding "+h("publisher",void 0)+" "+e(4));c.C="nostub";c.S="NS";clearInterval(x)},e(4)+" Override",50,50)})}(google_tag_manager["GTM-WS7SWNV"].macro(273),google_tag_manager["GTM-WS7SWNV"].macro(341),
+google_tag_manager["GTM-WS7SWNV"].macro(345),google_tag_manager["GTM-WS7SWNV"].macro(349),google_tag_manager["GTM-WS7SWNV"].macro(358),google_tag_manager["GTM-WS7SWNV"].macro(359),function(){window[window[google_tag_manager["GTM-WS7SWNV"].macro(360)].A||"dataLayer"].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});google_tag_manager["GTM-WS7SWNV"].macro(373)("https://www.googletagmanager.com/gtm.js?id\x3dGTM-KCVKDZM","GTM CMP "+google_tag_manager["GTM-WS7SWNV"].macro(375)(2))},google_tag_manager["GTM-WS7SWNV"].macro(376),google_tag_manager["GTM-WS7SWNV"].macro(377));</script>
+<script type="text/javascript" id="">!function(b,a,g,c,h){var k=a.toUpperCase()+(/laposte.net/.test(location.hostname)?"YJ2851":"23QE99"),d=".",e="pub",f="https://c"+d+a+"ads"+d+"com/"+a+d+"js";c={ver:[1,2].join(d),hst:c};c[e]=k;f=g(f,c);b[a]=c;b[a][e+"Id"]=b[a][e];b[a].initTime=(new Date).getTime();h(f,a,void 0,{onerror:function(){b[a].getAbpStatus=function(){return!1}}})}(window,google_tag_manager["GTM-WS7SWNV"].macro(378),google_tag_manager["GTM-WS7SWNV"].macro(379),google_tag_manager["GTM-WS7SWNV"].macro(380),google_tag_manager["GTM-WS7SWNV"].macro(393));</script>
+
+
+<script type="text/javascript" id="">!function(q,r,e,h,t,k,l,u){var b="db",m="adblock",f=b+"abp",v=f,n="AbpStatus",p="get"+n,g=b+"force";b+="dont";var w=window[e].Y||5,a=function(c,d){t(c);k(f,d,{sa:w});l(v);c&&l(n)};if(h(new RegExp(g.toUpperCase())))return a(g,g);if(h(new RegExp(b.toUpperCase())))return a(!1,b);q(function(){var c=window[r][p](),d=window[e].W;if("undefined"==typeof d)throw e+" not ready";return d?c?a(!0,"acceptableAds"):a(!1,"noAdAccepted"):c?(u("weird "+m+" behavior"),a(!0,"weirdAcceptable")):a(!1,"no"+m)},p,500,50,
+function(){k(f,"timeout")})}(google_tag_manager["GTM-WS7SWNV"].macro(461),google_tag_manager["GTM-WS7SWNV"].macro(462),google_tag_manager["GTM-WS7SWNV"].macro(463),google_tag_manager["GTM-WS7SWNV"].macro(464),google_tag_manager["GTM-WS7SWNV"].macro(473),google_tag_manager["GTM-WS7SWNV"].macro(524),google_tag_manager["GTM-WS7SWNV"].macro(529),google_tag_manager["GTM-WS7SWNV"].macro(532));</script>
+
+<script>
+    window.onload = function () {
+        var ad_1 = "<div id=\"75988-1\"><script src=\"\/\/ads.themoneytizer.com\/s\/gen.js?type=1\"><\/script><script src=\"\/\/ads.themoneytizer.com\/s\/requestform.js?siteId=75988&formatId=1\"><\/script><\/div>";
+        var ad_2 = "<div id=\"75988-28\"><script src=\"\/\/ads.themoneytizer.com\/s\/gen.js?type=28\"><\/script><script src=\"\/\/ads.themoneytizer.com\/s\/requestform.js?siteId=75988&formatId=28\"><\/script><\/div>";
+        var ad_3 = "<div id=\"75988-3\"><script src=\"\/\/ads.themoneytizer.com\/s\/gen.js?type=3\"><\/script><script src=\"\/\/ads.themoneytizer.com\/s\/requestform.js?siteId=75988&formatId=3\"><\/script><\/div>";
+        var ad_4 = "<div id=\"75988-2\"><script src=\"\/\/ads.themoneytizer.com\/s\/gen.js?type=2\"><\/script><script src=\"\/\/ads.themoneytizer.com\/s\/requestform.js?siteId=75988&formatId=2\"><\/script><\/div>";
+        var ad_5 = "<div id=\"75988-19\"><script src=\"\/\/ads.themoneytizer.com\/s\/gen.js?type=19\"><\/script><script src=\"\/\/ads.themoneytizer.com\/s\/requestform.js?siteId=75988&formatId=19\"><\/script><\/div>";
+		$('#right_tmt_ads1').html(ad_1);
+        $('#right_tmt_ads2').html(ad_2);
+        $('#left-mid1-ads').html(ad_3);
+        $('#left_tmt_ads2').html(ad_4);
+        $('#left-bottom-ads').html(ad_5);
+	}
+</script>
+
+
+<iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done"><div id="aswift_6_host" style="border: none; height: 124px; width: 1005px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins><img src="https://c.aaxads.com/pxusr.gif" style="display: none !important;"><img src="https://www.aaxdetect.com/pxext.gif" style="display: none !important;"><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe><iframe id="sovrn_beacon" margin="0" padding="0" frameborder="0" width="1" height="1" scrolling="no" src="https://ap.lijit.com/beacon?informer=261720&amp;gdpr_consent=&amp;us_privacy=1---" style="margin: 0px; padding: 0px; border: 0px none; width: 1px; height: 1px; overflow: hidden;"></iframe><script type="text/javascript" id="">!function(b,a,g,c,h){var k=a.toUpperCase()+(/laposte.net/.test(location.hostname)?"YJ2851":"23QE99"),d=".",e="pub",f="https://c"+d+a+"ads"+d+"com/"+a+d+"js";c={ver:[1,2].join(d),hst:c};c[e]=k;f=g(f,c);b[a]=c;b[a][e+"Id"]=b[a][e];b[a].initTime=(new Date).getTime();h(f,a,void 0,{onerror:function(){b[a].getAbpStatus=function(){return!1}}})}(window,google_tag_manager["GTM-WS7SWNV"].macro(537),google_tag_manager["GTM-WS7SWNV"].macro(538),google_tag_manager["GTM-WS7SWNV"].macro(539),google_tag_manager["GTM-WS7SWNV"].macro(552));</script>
+
+
+<script type="text/javascript" id="">!function(q,r,e,h,t,k,l,u){var b="db",m="adblock",f=b+"abp",v=f,n="AbpStatus",p="get"+n,g=b+"force";b+="dont";var w=window[e].Y||5,a=function(c,d){t(c);k(f,d,{sa:w});l(v);c&&l(n)};if(h(new RegExp(g.toUpperCase())))return a(g,g);if(h(new RegExp(b.toUpperCase())))return a(!1,b);q(function(){var c=window[r][p](),d=window[e].W;if("undefined"==typeof d)throw e+" not ready";return d?c?a(!0,"acceptableAds"):a(!1,"noAdAccepted"):c?(u("weird "+m+" behavior"),a(!0,"weirdAcceptable")):a(!1,"no"+m)},p,500,50,
+function(){k(f,"timeout")})}(google_tag_manager["GTM-WS7SWNV"].macro(620),google_tag_manager["GTM-WS7SWNV"].macro(621),google_tag_manager["GTM-WS7SWNV"].macro(622),google_tag_manager["GTM-WS7SWNV"].macro(623),google_tag_manager["GTM-WS7SWNV"].macro(632),google_tag_manager["GTM-WS7SWNV"].macro(683),google_tag_manager["GTM-WS7SWNV"].macro(688),google_tag_manager["GTM-WS7SWNV"].macro(691));</script><img src="https://c.aaxads.com/pxusr.gif" style="display: none !important;"><img src="https://www.aaxdetect.com/pxext.gif" style="display: none !important;"><script type="text/javascript" id="">!function(b,a,g,c,h){var k=a.toUpperCase()+(/laposte.net/.test(location.hostname)?"YJ2851":"23QE99"),d=".",e="pub",f="https://c"+d+a+"ads"+d+"com/"+a+d+"js";c={ver:[1,2].join(d),hst:c};c[e]=k;f=g(f,c);b[a]=c;b[a][e+"Id"]=b[a][e];b[a].initTime=(new Date).getTime();h(f,a,void 0,{onerror:function(){b[a].getAbpStatus=function(){return!1}}})}(window,google_tag_manager["GTM-WS7SWNV"].macro(694),google_tag_manager["GTM-WS7SWNV"].macro(695),google_tag_manager["GTM-WS7SWNV"].macro(696),google_tag_manager["GTM-WS7SWNV"].macro(709));</script>
+
+
+<script type="text/javascript" id="">!function(q,r,e,h,t,k,l,u){var b="db",m="adblock",f=b+"abp",v=f,n="AbpStatus",p="get"+n,g=b+"force";b+="dont";var w=window[e].Y||5,a=function(c,d){t(c);k(f,d,{sa:w});l(v);c&&l(n)};if(h(new RegExp(g.toUpperCase())))return a(g,g);if(h(new RegExp(b.toUpperCase())))return a(!1,b);q(function(){var c=window[r][p](),d=window[e].W;if("undefined"==typeof d)throw e+" not ready";return d?c?a(!0,"acceptableAds"):a(!1,"noAdAccepted"):c?(u("weird "+m+" behavior"),a(!0,"weirdAcceptable")):a(!1,"no"+m)},p,500,50,
+function(){k(f,"timeout")})}(google_tag_manager["GTM-WS7SWNV"].macro(777),google_tag_manager["GTM-WS7SWNV"].macro(778),google_tag_manager["GTM-WS7SWNV"].macro(779),google_tag_manager["GTM-WS7SWNV"].macro(780),google_tag_manager["GTM-WS7SWNV"].macro(789),google_tag_manager["GTM-WS7SWNV"].macro(840),google_tag_manager["GTM-WS7SWNV"].macro(845),google_tag_manager["GTM-WS7SWNV"].macro(848));</script><img src="https://c.aaxads.com/pxusr.gif" style="display: none !important;"><img src="https://www.aaxdetect.com/pxext.gif" style="display: none !important;"><script type="text/javascript" id="">!function(b,a,g,c,h){var k=a.toUpperCase()+(/laposte.net/.test(location.hostname)?"YJ2851":"23QE99"),d=".",e="pub",f="https://c"+d+a+"ads"+d+"com/"+a+d+"js";c={ver:[1,2].join(d),hst:c};c[e]=k;f=g(f,c);b[a]=c;b[a][e+"Id"]=b[a][e];b[a].initTime=(new Date).getTime();h(f,a,void 0,{onerror:function(){b[a].getAbpStatus=function(){return!1}}})}(window,google_tag_manager["GTM-WS7SWNV"].macro(851),google_tag_manager["GTM-WS7SWNV"].macro(852),google_tag_manager["GTM-WS7SWNV"].macro(853),google_tag_manager["GTM-WS7SWNV"].macro(866));</script>
+
+
+<script type="text/javascript" id="">!function(q,r,e,h,t,k,l,u){var b="db",m="adblock",f=b+"abp",v=f,n="AbpStatus",p="get"+n,g=b+"force";b+="dont";var w=window[e].Y||5,a=function(c,d){t(c);k(f,d,{sa:w});l(v);c&&l(n)};if(h(new RegExp(g.toUpperCase())))return a(g,g);if(h(new RegExp(b.toUpperCase())))return a(!1,b);q(function(){var c=window[r][p](),d=window[e].W;if("undefined"==typeof d)throw e+" not ready";return d?c?a(!0,"acceptableAds"):a(!1,"noAdAccepted"):c?(u("weird "+m+" behavior"),a(!0,"weirdAcceptable")):a(!1,"no"+m)},p,500,50,
+function(){k(f,"timeout")})}(google_tag_manager["GTM-WS7SWNV"].macro(934),google_tag_manager["GTM-WS7SWNV"].macro(935),google_tag_manager["GTM-WS7SWNV"].macro(936),google_tag_manager["GTM-WS7SWNV"].macro(937),google_tag_manager["GTM-WS7SWNV"].macro(946),google_tag_manager["GTM-WS7SWNV"].macro(997),google_tag_manager["GTM-WS7SWNV"].macro(1002),google_tag_manager["GTM-WS7SWNV"].macro(1005));</script><img src="https://c.aaxads.com/pxusr.gif" style="display: none !important;"><img src="https://www.aaxdetect.com/pxext.gif" style="display: none !important;"></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20220822/r20190131/zrt_lookup.html" style="display: none;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><div id="aswift_5_host" style="border: none; height: 754px; width: 1519px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins><iframe sandbox="allow-scripts allow-same-origin" id="1912bf8928f3c028" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ap.lijit.com/beacon?informer=13395109">
+</iframe><iframe sandbox="allow-scripts allow-same-origin" id="192107bb98b44559" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://csync.smilewanted.com">
+</iframe><iframe sandbox="allow-scripts allow-same-origin" id="193382b5a0750d98" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://acdn.adnxs.com/dmp/async_usersync.html">
+</iframe><iframe sandbox="allow-scripts allow-same-origin" id="1941476f0784c0fa" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ads.betweendigital.com/sspmatch-iframe">
+</iframe><iframe sandbox="allow-scripts allow-same-origin" id="195292c148135cf5" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://sync.richaudience.com/dcf3528a0b8aa83634892d50e91c306e/?ord=8430963456">
+</iframe><iframe sandbox="allow-scripts allow-same-origin" id="1969a270cd06463d" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://eus.rubiconproject.com/usync.html?gdpr=0">
+</iframe><iframe sandbox="allow-scripts allow-same-origin" id="197ea0dcab20d168" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://onetag-sys.com/usync/?cb=1661561004405&amp;gdpr=0">
+</iframe><iframe sandbox="allow-scripts allow-same-origin" id="1981ba6aed718a13" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://eb2.3lift.com/sync?">
+</iframe><iframe sandbox="allow-scripts allow-same-origin" id="489d904002ae93b4" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://u.openx.net/w/1.0/pd?gdpr=0&amp;gdpr_consent=">
+</iframe></html>

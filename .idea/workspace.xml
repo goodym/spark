@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="word" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7c171951-bcdc-413a-8f13-3f93c4d11b8d" name="Changes" comment="add wwwlogs">
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/03/03aee4af8c13aac205d01877f3daf867c6842f80/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/03/03aee4af8c13aac205d01877f3daf867c6842f80/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/03/03aee4af8c13aac205d01877f3daf867c6842f80/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/03/03aee4af8c13aac205d01877f3daf867c6842f80/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/03/03aee4af8c13aac205d01877f3daf867c6842f80/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/03/03aee4af8c13aac205d01877f3daf867c6842f80/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/09/09d5410acc0466b9eed1b41d94152108fd28adac/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/09/09d5410acc0466b9eed1b41d94152108fd28adac/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/09/09d5410acc0466b9eed1b41d94152108fd28adac/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/09/09d5410acc0466b9eed1b41d94152108fd28adac/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/09/09d5410acc0466b9eed1b41d94152108fd28adac/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/09/09d5410acc0466b9eed1b41d94152108fd28adac/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/10/10b8edda66955f8507fd97508b3dfabd91232444/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/10/10b8edda66955f8507fd97508b3dfabd91232444/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/10/10b8edda66955f8507fd97508b3dfabd91232444/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/10/10b8edda66955f8507fd97508b3dfabd91232444/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/10/10b8edda66955f8507fd97508b3dfabd91232444/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/10/10b8edda66955f8507fd97508b3dfabd91232444/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/14/14395390ced919260d10511e49920cf5e07256e2/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/14/14395390ced919260d10511e49920cf5e07256e2/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/14/14395390ced919260d10511e49920cf5e07256e2/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/14/14395390ced919260d10511e49920cf5e07256e2/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/14/14395390ced919260d10511e49920cf5e07256e2/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/14/14395390ced919260d10511e49920cf5e07256e2/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/19/19f13274ccac31d486a6fef045abc7be7fa814d6/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/19/19f13274ccac31d486a6fef045abc7be7fa814d6/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/19/19f13274ccac31d486a6fef045abc7be7fa814d6/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/19/19f13274ccac31d486a6fef045abc7be7fa814d6/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/19/19f13274ccac31d486a6fef045abc7be7fa814d6/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/19/19f13274ccac31d486a6fef045abc7be7fa814d6/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/1d/1dacd442756624e854d213ab9b1d64b4a8313149/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/1d/1dacd442756624e854d213ab9b1d64b4a8313149/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/1d/1dacd442756624e854d213ab9b1d64b4a8313149/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/1d/1dacd442756624e854d213ab9b1d64b4a8313149/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/1d/1dacd442756624e854d213ab9b1d64b4a8313149/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/1d/1dacd442756624e854d213ab9b1d64b4a8313149/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/23/23b21498fffeeb79c17c941e31d1066ab7db45ff/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/23/23b21498fffeeb79c17c941e31d1066ab7db45ff/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/23/23b21498fffeeb79c17c941e31d1066ab7db45ff/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/23/23b21498fffeeb79c17c941e31d1066ab7db45ff/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/23/23b21498fffeeb79c17c941e31d1066ab7db45ff/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/23/23b21498fffeeb79c17c941e31d1066ab7db45ff/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/25/25ff734bf8142a3ce84805e70aa5793ff7ac4da9/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/25/25ff734bf8142a3ce84805e70aa5793ff7ac4da9/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/25/25ff734bf8142a3ce84805e70aa5793ff7ac4da9/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/25/25ff734bf8142a3ce84805e70aa5793ff7ac4da9/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/25/25ff734bf8142a3ce84805e70aa5793ff7ac4da9/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/25/25ff734bf8142a3ce84805e70aa5793ff7ac4da9/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2a/2a4726b9c2315218c7427d83887466363f391981/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2a/2a4726b9c2315218c7427d83887466363f391981/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2a/2a4726b9c2315218c7427d83887466363f391981/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2a/2a4726b9c2315218c7427d83887466363f391981/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2a/2a4726b9c2315218c7427d83887466363f391981/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2a/2a4726b9c2315218c7427d83887466363f391981/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2e/2ebb10f2d569624d941d0f35c6ce844c951b0ff4/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2e/2ebb10f2d569624d941d0f35c6ce844c951b0ff4/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2e/2ebb10f2d569624d941d0f35c6ce844c951b0ff4/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2e/2ebb10f2d569624d941d0f35c6ce844c951b0ff4/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2e/2ebb10f2d569624d941d0f35c6ce844c951b0ff4/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2e/2ebb10f2d569624d941d0f35c6ce844c951b0ff4/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2f/2f9b2ef284eca4b1724fb5b8556429b2dd073305/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2f/2f9b2ef284eca4b1724fb5b8556429b2dd073305/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2f/2f9b2ef284eca4b1724fb5b8556429b2dd073305/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2f/2f9b2ef284eca4b1724fb5b8556429b2dd073305/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2f/2f9b2ef284eca4b1724fb5b8556429b2dd073305/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/2f/2f9b2ef284eca4b1724fb5b8556429b2dd073305/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/3b/3b5b81b7edbea0ead2f82578a99d1f4de4450534/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/3b/3b5b81b7edbea0ead2f82578a99d1f4de4450534/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/3b/3b5b81b7edbea0ead2f82578a99d1f4de4450534/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/3b/3b5b81b7edbea0ead2f82578a99d1f4de4450534/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/3b/3b5b81b7edbea0ead2f82578a99d1f4de4450534/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/3b/3b5b81b7edbea0ead2f82578a99d1f4de4450534/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/44/4482aec563c669d515b3c8501ee03509da11dea0/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/44/4482aec563c669d515b3c8501ee03509da11dea0/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/44/4482aec563c669d515b3c8501ee03509da11dea0/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/44/4482aec563c669d515b3c8501ee03509da11dea0/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/44/4482aec563c669d515b3c8501ee03509da11dea0/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/44/4482aec563c669d515b3c8501ee03509da11dea0/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/45/45d02fdeed00c2d3ee204756a125688e6abee021/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/45/45d02fdeed00c2d3ee204756a125688e6abee021/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/45/45d02fdeed00c2d3ee204756a125688e6abee021/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/45/45d02fdeed00c2d3ee204756a125688e6abee021/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/45/45d02fdeed00c2d3ee204756a125688e6abee021/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/45/45d02fdeed00c2d3ee204756a125688e6abee021/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/47/47070377f30e98151f3c6d8542eee2470f658404/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/47/47070377f30e98151f3c6d8542eee2470f658404/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/47/47070377f30e98151f3c6d8542eee2470f658404/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/47/47070377f30e98151f3c6d8542eee2470f658404/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/47/47070377f30e98151f3c6d8542eee2470f658404/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/47/47070377f30e98151f3c6d8542eee2470f658404/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/49/497885aee56afb4fbf08418be3bcd46e823c2056/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/49/497885aee56afb4fbf08418be3bcd46e823c2056/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/49/497885aee56afb4fbf08418be3bcd46e823c2056/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/49/497885aee56afb4fbf08418be3bcd46e823c2056/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/49/497885aee56afb4fbf08418be3bcd46e823c2056/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/49/497885aee56afb4fbf08418be3bcd46e823c2056/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b42099b3cfcb3e0d71228a2ef4c134afff915cc/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b42099b3cfcb3e0d71228a2ef4c134afff915cc/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b42099b3cfcb3e0d71228a2ef4c134afff915cc/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b42099b3cfcb3e0d71228a2ef4c134afff915cc/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b42099b3cfcb3e0d71228a2ef4c134afff915cc/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b42099b3cfcb3e0d71228a2ef4c134afff915cc/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b4682e301f3497f8a935d5179a5581135c1bad8/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b4682e301f3497f8a935d5179a5581135c1bad8/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b4682e301f3497f8a935d5179a5581135c1bad8/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b4682e301f3497f8a935d5179a5581135c1bad8/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b4682e301f3497f8a935d5179a5581135c1bad8/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/4b/4b4682e301f3497f8a935d5179a5581135c1bad8/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/50/502b92db7a7a9452ef74af3c00f4b2fbfd73d7f2/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/50/502b92db7a7a9452ef74af3c00f4b2fbfd73d7f2/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/50/502b92db7a7a9452ef74af3c00f4b2fbfd73d7f2/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/50/502b92db7a7a9452ef74af3c00f4b2fbfd73d7f2/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/50/502b92db7a7a9452ef74af3c00f4b2fbfd73d7f2/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/50/502b92db7a7a9452ef74af3c00f4b2fbfd73d7f2/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/53/5365e2e6650ec9a4ac9a656949fd8a7e49b3b8f0/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/53/5365e2e6650ec9a4ac9a656949fd8a7e49b3b8f0/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/53/5365e2e6650ec9a4ac9a656949fd8a7e49b3b8f0/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/53/5365e2e6650ec9a4ac9a656949fd8a7e49b3b8f0/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/53/5365e2e6650ec9a4ac9a656949fd8a7e49b3b8f0/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/53/5365e2e6650ec9a4ac9a656949fd8a7e49b3b8f0/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5a/5a5139c18c13c0cd3ee0ff89c30aba2a575d990f/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5a/5a5139c18c13c0cd3ee0ff89c30aba2a575d990f/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5a/5a5139c18c13c0cd3ee0ff89c30aba2a575d990f/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5a/5a5139c18c13c0cd3ee0ff89c30aba2a575d990f/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5a/5a5139c18c13c0cd3ee0ff89c30aba2a575d990f/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5a/5a5139c18c13c0cd3ee0ff89c30aba2a575d990f/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5d/5de4f3d36e1b9b24043c8d62e78dc49a4e67ba8b/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5d/5de4f3d36e1b9b24043c8d62e78dc49a4e67ba8b/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5d/5de4f3d36e1b9b24043c8d62e78dc49a4e67ba8b/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5d/5de4f3d36e1b9b24043c8d62e78dc49a4e67ba8b/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5d/5de4f3d36e1b9b24043c8d62e78dc49a4e67ba8b/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/5d/5de4f3d36e1b9b24043c8d62e78dc49a4e67ba8b/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/67/67a4e42ba7f6d44c0c9067c3b17c4461608b97bf/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/67/67a4e42ba7f6d44c0c9067c3b17c4461608b97bf/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/67/67a4e42ba7f6d44c0c9067c3b17c4461608b97bf/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/67/67a4e42ba7f6d44c0c9067c3b17c4461608b97bf/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/67/67a4e42ba7f6d44c0c9067c3b17c4461608b97bf/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/67/67a4e42ba7f6d44c0c9067c3b17c4461608b97bf/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/69/6947de66aa4c03bfefe4d2cca6940c8089c339a5/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/69/6947de66aa4c03bfefe4d2cca6940c8089c339a5/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/69/6947de66aa4c03bfefe4d2cca6940c8089c339a5/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/69/6947de66aa4c03bfefe4d2cca6940c8089c339a5/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/69/6947de66aa4c03bfefe4d2cca6940c8089c339a5/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/69/6947de66aa4c03bfefe4d2cca6940c8089c339a5/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/6e/6ea913ac8de3f7568a873429ea4366d6cdbbef4f/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/6e/6ea913ac8de3f7568a873429ea4366d6cdbbef4f/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/6e/6ea913ac8de3f7568a873429ea4366d6cdbbef4f/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/6e/6ea913ac8de3f7568a873429ea4366d6cdbbef4f/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/6e/6ea913ac8de3f7568a873429ea4366d6cdbbef4f/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/6e/6ea913ac8de3f7568a873429ea4366d6cdbbef4f/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/71/7105c0a8c6617a0e7d7996c029b3c83af6b05660/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/71/7105c0a8c6617a0e7d7996c029b3c83af6b05660/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/71/7105c0a8c6617a0e7d7996c029b3c83af6b05660/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/71/7105c0a8c6617a0e7d7996c029b3c83af6b05660/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/71/7105c0a8c6617a0e7d7996c029b3c83af6b05660/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/71/7105c0a8c6617a0e7d7996c029b3c83af6b05660/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/73/736d749f4e38e83ba930f2c021c2a077525fa7aa/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/73/736d749f4e38e83ba930f2c021c2a077525fa7aa/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/73/736d749f4e38e83ba930f2c021c2a077525fa7aa/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/73/736d749f4e38e83ba930f2c021c2a077525fa7aa/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/73/736d749f4e38e83ba930f2c021c2a077525fa7aa/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/73/736d749f4e38e83ba930f2c021c2a077525fa7aa/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/7a/7aefe523cbc78c4feb22d89e6c03480cb79a9e79/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/7a/7aefe523cbc78c4feb22d89e6c03480cb79a9e79/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/7a/7aefe523cbc78c4feb22d89e6c03480cb79a9e79/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/7a/7aefe523cbc78c4feb22d89e6c03480cb79a9e79/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/7a/7aefe523cbc78c4feb22d89e6c03480cb79a9e79/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/7a/7aefe523cbc78c4feb22d89e6c03480cb79a9e79/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/80/809aa5bd99547019134a9a4e281786e42921aba5/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/80/809aa5bd99547019134a9a4e281786e42921aba5/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/80/809aa5bd99547019134a9a4e281786e42921aba5/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/80/809aa5bd99547019134a9a4e281786e42921aba5/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/80/809aa5bd99547019134a9a4e281786e42921aba5/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/80/809aa5bd99547019134a9a4e281786e42921aba5/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/84/849ee0dfdf81c564f55f27e51d1df239b228ce6e/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/84/849ee0dfdf81c564f55f27e51d1df239b228ce6e/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/84/849ee0dfdf81c564f55f27e51d1df239b228ce6e/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/84/849ee0dfdf81c564f55f27e51d1df239b228ce6e/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/84/849ee0dfdf81c564f55f27e51d1df239b228ce6e/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/84/849ee0dfdf81c564f55f27e51d1df239b228ce6e/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/89/89ba820600031afbbfe5d71c036b09a7430f644f/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/89/89ba820600031afbbfe5d71c036b09a7430f644f/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/89/89ba820600031afbbfe5d71c036b09a7430f644f/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/89/89ba820600031afbbfe5d71c036b09a7430f644f/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/89/89ba820600031afbbfe5d71c036b09a7430f644f/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/89/89ba820600031afbbfe5d71c036b09a7430f644f/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8b/8b9740bfb86be8bde58864601dca3768a93ffa32/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8b/8b9740bfb86be8bde58864601dca3768a93ffa32/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8b/8b9740bfb86be8bde58864601dca3768a93ffa32/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8b/8b9740bfb86be8bde58864601dca3768a93ffa32/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8b/8b9740bfb86be8bde58864601dca3768a93ffa32/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8b/8b9740bfb86be8bde58864601dca3768a93ffa32/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8c/8cd47f9588a54d57ff4dacf5bfe2bd4e35c3882e/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8c/8cd47f9588a54d57ff4dacf5bfe2bd4e35c3882e/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8c/8cd47f9588a54d57ff4dacf5bfe2bd4e35c3882e/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8c/8cd47f9588a54d57ff4dacf5bfe2bd4e35c3882e/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8c/8cd47f9588a54d57ff4dacf5bfe2bd4e35c3882e/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/8c/8cd47f9588a54d57ff4dacf5bfe2bd4e35c3882e/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/97/970dc2e3dc1bed241dc70a2111ec2f36d2965807/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/97/970dc2e3dc1bed241dc70a2111ec2f36d2965807/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/97/970dc2e3dc1bed241dc70a2111ec2f36d2965807/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/97/970dc2e3dc1bed241dc70a2111ec2f36d2965807/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/97/970dc2e3dc1bed241dc70a2111ec2f36d2965807/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/97/970dc2e3dc1bed241dc70a2111ec2f36d2965807/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/98/982f589739ce1b1c27004659409d0e5856e37464/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/98/982f589739ce1b1c27004659409d0e5856e37464/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/98/982f589739ce1b1c27004659409d0e5856e37464/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/98/982f589739ce1b1c27004659409d0e5856e37464/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/98/982f589739ce1b1c27004659409d0e5856e37464/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/98/982f589739ce1b1c27004659409d0e5856e37464/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/99/9921582cbe8d35364fbc47fd044905ef510cf7ca/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/99/9921582cbe8d35364fbc47fd044905ef510cf7ca/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/99/9921582cbe8d35364fbc47fd044905ef510cf7ca/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/99/9921582cbe8d35364fbc47fd044905ef510cf7ca/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/99/9921582cbe8d35364fbc47fd044905ef510cf7ca/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/99/9921582cbe8d35364fbc47fd044905ef510cf7ca/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/9f/9f166b574ac8a3884f55765cfc38ab3d8307e9da/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/9f/9f166b574ac8a3884f55765cfc38ab3d8307e9da/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/9f/9f166b574ac8a3884f55765cfc38ab3d8307e9da/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/9f/9f166b574ac8a3884f55765cfc38ab3d8307e9da/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/9f/9f166b574ac8a3884f55765cfc38ab3d8307e9da/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/9f/9f166b574ac8a3884f55765cfc38ab3d8307e9da/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a1/a1d160723c18edbd2d341daccfcb60c9461f416a/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a1/a1d160723c18edbd2d341daccfcb60c9461f416a/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a1/a1d160723c18edbd2d341daccfcb60c9461f416a/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a1/a1d160723c18edbd2d341daccfcb60c9461f416a/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a1/a1d160723c18edbd2d341daccfcb60c9461f416a/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a1/a1d160723c18edbd2d341daccfcb60c9461f416a/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4773961fdcb86e590483c23e97fa7bfb5b36b7c/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4773961fdcb86e590483c23e97fa7bfb5b36b7c/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4773961fdcb86e590483c23e97fa7bfb5b36b7c/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4773961fdcb86e590483c23e97fa7bfb5b36b7c/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4773961fdcb86e590483c23e97fa7bfb5b36b7c/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4773961fdcb86e590483c23e97fa7bfb5b36b7c/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4b1249e6a8bc874d0d2d28ef98c63c1878c3c91/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4b1249e6a8bc874d0d2d28ef98c63c1878c3c91/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4b1249e6a8bc874d0d2d28ef98c63c1878c3c91/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4b1249e6a8bc874d0d2d28ef98c63c1878c3c91/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4b1249e6a8bc874d0d2d28ef98c63c1878c3c91/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4b1249e6a8bc874d0d2d28ef98c63c1878c3c91/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4f73489c8c59dbfd0eeae20afccc306708f55a5/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4f73489c8c59dbfd0eeae20afccc306708f55a5/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4f73489c8c59dbfd0eeae20afccc306708f55a5/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4f73489c8c59dbfd0eeae20afccc306708f55a5/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4f73489c8c59dbfd0eeae20afccc306708f55a5/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a4/a4f73489c8c59dbfd0eeae20afccc306708f55a5/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a5/a571a5a2c49d434731a48d564fcf75d4691bd14f/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a5/a571a5a2c49d434731a48d564fcf75d4691bd14f/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a5/a571a5a2c49d434731a48d564fcf75d4691bd14f/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a5/a571a5a2c49d434731a48d564fcf75d4691bd14f/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a5/a571a5a2c49d434731a48d564fcf75d4691bd14f/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a5/a571a5a2c49d434731a48d564fcf75d4691bd14f/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a9/a95af5b63990850c8bb8ad00e9772f9dcf27a7bc/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a9/a95af5b63990850c8bb8ad00e9772f9dcf27a7bc/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a9/a95af5b63990850c8bb8ad00e9772f9dcf27a7bc/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a9/a95af5b63990850c8bb8ad00e9772f9dcf27a7bc/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a9/a95af5b63990850c8bb8ad00e9772f9dcf27a7bc/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/a9/a95af5b63990850c8bb8ad00e9772f9dcf27a7bc/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/af/af71c8beed00b6c6b2cf739b3a8a0d855dcd577c/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/af/af71c8beed00b6c6b2cf739b3a8a0d855dcd577c/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/af/af71c8beed00b6c6b2cf739b3a8a0d855dcd577c/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/af/af71c8beed00b6c6b2cf739b3a8a0d855dcd577c/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/af/af71c8beed00b6c6b2cf739b3a8a0d855dcd577c/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/af/af71c8beed00b6c6b2cf739b3a8a0d855dcd577c/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bd/bd819ea7f21cc125a805193c9efd8b8468de5bdb/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bd/bd819ea7f21cc125a805193c9efd8b8468de5bdb/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bd/bd819ea7f21cc125a805193c9efd8b8468de5bdb/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bd/bd819ea7f21cc125a805193c9efd8b8468de5bdb/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bd/bd819ea7f21cc125a805193c9efd8b8468de5bdb/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bd/bd819ea7f21cc125a805193c9efd8b8468de5bdb/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bf/bfa591b4dd050d209d38962c9fd40695db0f4a66/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bf/bfa591b4dd050d209d38962c9fd40695db0f4a66/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bf/bfa591b4dd050d209d38962c9fd40695db0f4a66/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bf/bfa591b4dd050d209d38962c9fd40695db0f4a66/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bf/bfa591b4dd050d209d38962c9fd40695db0f4a66/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/bf/bfa591b4dd050d209d38962c9fd40695db0f4a66/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/c5/c593373774f449a176836451191df0cb0de1d62a/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/c5/c593373774f449a176836451191df0cb0de1d62a/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/c5/c593373774f449a176836451191df0cb0de1d62a/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/c5/c593373774f449a176836451191df0cb0de1d62a/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/c5/c593373774f449a176836451191df0cb0de1d62a/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/c5/c593373774f449a176836451191df0cb0de1d62a/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ca/caf6db76e58ed22294f7c0f2c38aa04d5dfa9e46/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ca/caf6db76e58ed22294f7c0f2c38aa04d5dfa9e46/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ca/caf6db76e58ed22294f7c0f2c38aa04d5dfa9e46/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ca/caf6db76e58ed22294f7c0f2c38aa04d5dfa9e46/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ca/caf6db76e58ed22294f7c0f2c38aa04d5dfa9e46/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ca/caf6db76e58ed22294f7c0f2c38aa04d5dfa9e46/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/cb/cb2bc2926ac217f6a701efd705781a1eff16c172/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/cb/cb2bc2926ac217f6a701efd705781a1eff16c172/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/cb/cb2bc2926ac217f6a701efd705781a1eff16c172/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/cb/cb2bc2926ac217f6a701efd705781a1eff16c172/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/cb/cb2bc2926ac217f6a701efd705781a1eff16c172/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/cb/cb2bc2926ac217f6a701efd705781a1eff16c172/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/d2/d27366f8c15744bbb2983f6242d1f103598ea7b0/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/d2/d27366f8c15744bbb2983f6242d1f103598ea7b0/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/d2/d27366f8c15744bbb2983f6242d1f103598ea7b0/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/d2/d27366f8c15744bbb2983f6242d1f103598ea7b0/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/d2/d27366f8c15744bbb2983f6242d1f103598ea7b0/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/d2/d27366f8c15744bbb2983f6242d1f103598ea7b0/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/de/de4cf46cc8740844a6a9c190d6db1e5a67aebe02/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/de/de4cf46cc8740844a6a9c190d6db1e5a67aebe02/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/de/de4cf46cc8740844a6a9c190d6db1e5a67aebe02/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/de/de4cf46cc8740844a6a9c190d6db1e5a67aebe02/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/de/de4cf46cc8740844a6a9c190d6db1e5a67aebe02/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/de/de4cf46cc8740844a6a9c190d6db1e5a67aebe02/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e2/e24324bb5918e7f87ad568868d72ceeb92518e64/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e2/e24324bb5918e7f87ad568868d72ceeb92518e64/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e2/e24324bb5918e7f87ad568868d72ceeb92518e64/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e2/e24324bb5918e7f87ad568868d72ceeb92518e64/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e2/e24324bb5918e7f87ad568868d72ceeb92518e64/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e2/e24324bb5918e7f87ad568868d72ceeb92518e64/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e3/e3bf14b473757a70a6783b902947d5a444efe8c8/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e3/e3bf14b473757a70a6783b902947d5a444efe8c8/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e3/e3bf14b473757a70a6783b902947d5a444efe8c8/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e3/e3bf14b473757a70a6783b902947d5a444efe8c8/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e3/e3bf14b473757a70a6783b902947d5a444efe8c8/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/e3/e3bf14b473757a70a6783b902947d5a444efe8c8/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ea/ea7a74563408a008a2617baf6767849eb452e6a8/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ea/ea7a74563408a008a2617baf6767849eb452e6a8/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ea/ea7a74563408a008a2617baf6767849eb452e6a8/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ea/ea7a74563408a008a2617baf6767849eb452e6a8/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ea/ea7a74563408a008a2617baf6767849eb452e6a8/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/ea/ea7a74563408a008a2617baf6767849eb452e6a8/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/eb/ebc6181e8990fadf552008e5c566067d93f4b74d/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/eb/ebc6181e8990fadf552008e5c566067d93f4b74d/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/eb/ebc6181e8990fadf552008e5c566067d93f4b74d/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/eb/ebc6181e8990fadf552008e5c566067d93f4b74d/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/eb/ebc6181e8990fadf552008e5c566067d93f4b74d/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/eb/ebc6181e8990fadf552008e5c566067d93f4b74d/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/f3/f35eebbb6817ef43b14093976924a5c8ebad38be/meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/f3/f35eebbb6817ef43b14093976924a5c8ebad38be/pickled_meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/f3/f35eebbb6817ef43b14093976924a5c8ebad38be/request_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/f3/f35eebbb6817ef43b14093976924a5c8ebad38be/request_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/f3/f35eebbb6817ef43b14093976924a5c8ebad38be/response_body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/httpcache/qingqing/f3/f35eebbb6817ef43b14093976924a5c8ebad38be/response_headers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C4/pyspark/fromMongo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C4/pyspark/mon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pycharm/C4/pyspark/mongo2hdfs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/word.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jolbox_bonecp_0_8_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jars.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/html/sqoop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyPartition.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ToDistribute.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WordCount.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WordCount1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap4/HelloWorld.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap4/LogCount.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap4/WordCount.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap6/BlogHotPage.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap6/BlogSimulator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap6/WriteDataToMysql.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap6/WriteDataToMysql_v2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap6/WriteDataToMysql_v3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap6/WriteDataToMysql_v4.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap6/wwwlog.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap8/Logistic_User.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap8/test_User.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap9/ItemBased/ItemBasedModelCreate.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap9/ItemBased/ItemBasedModelEvaluate.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap9/SparkALS/ALSModelCreate.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap9/SparkALS/ALSModelEvaluate.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap9/SparkALS/ALSModelOptimize.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap9/UserBased/UserBasedModelCreate.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap9/UserBased/UserBasedModelEvaluate.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stock/CalculateChange.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stock/DatePartition.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stock/MovingAverage.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ConnectionPool.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/wwwlog/LogCount.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordcount.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/SelectData.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/WordCount.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/accessTimesSort.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/dailyAccessCount.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/gateway.GwWordCount.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datadeal.MovieClassify.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datadeal.S4_MovieClassify.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datadeal.S5_Validate.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datadeal.S6_MovieClassify.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datadeal.S7_Validate.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datadeal.Validate.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datajoin.DataProcessing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datajoin.MoviesGenres.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datajoin.RatingsAndUsers.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datajoin.S0_RatingsAndUsers.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datajoin.S2_DataProcessing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datajoin.S2_UsersAndMovies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datajoin.S4_DataProcessing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/knn.datajoin.UsersAndMovies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/logcount.LogCountRun.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.MusicWordCount.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.S1_MusicWordCount.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.S2_BookSelectData.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.S2_MediaSelectData.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.S2_MusicSelectBson.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.S2_MusicSelectData.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.S2_MusicSelectData2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.S2_NewsSelectData.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.S2_TaobaoSelectData.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/musiccount.S4_MusicFilterData.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/bsoncount/S1_MusicWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/bsoncount/S1_MusicWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap5_hdfsfs/ReadSequenceFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap5_logcount/LogCountRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap5_logcount/LogCountRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datadeal/S6_MovieClassify.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datadeal/S6_MovieClassify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datadeal/S7_Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datadeal/S7_Validate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datadeal/S8_AllJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datadeal/S8_AllJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S1_RatingsAndUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S1_RatingsAndUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S2_UsersAndMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S2_UsersAndMovies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S3_MoviesGenres.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S3_MoviesGenres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S4_DataProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S4_DataProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S5_SplitData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/chap6_knn/datajoin/S5_SplitData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/train5_bookscount/S1_BookSelectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/train5_bookscount/S1_BookSelectData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/train8_gateway/GwWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/train8_gateway/GwWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/utils/ConfUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/utils/ConfUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/utils/FinalUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/utils/FinalUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/z_old/S2_MusicSelectBson.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/src/z_old/S2_MusicSelectBson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/wordcount.SelectData.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/wordcount.WordCount.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/wordcount.accessTimesSort.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../hadoop/MemberCount/wordcount.dailyAccessCount.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/code/bigdata/utils/MongoBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/code/bigdata/utils/MongoBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/code/bigdata/utils/MysqlBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/code/bigdata/utils/MysqlBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/musics/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../pycharm/C3/Python50506/实验/第7章/demo/musics/pipelines.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2CmbATxkgmUj6Trbskbbx3mHZJt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dynamic.classpath": "true",
+    "last_opened_file_path": "E:/soft/hadoop/spark-3.1.3-bin-hadoop3.2/jars",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "scala_project_settings_configurable.last_selected_tab_index": "7",
+    "settings.editor.selected.configurable": "configurable.group.tools"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git\spark\S3\b46488\chap4\wordcount\src\main\java\chap9" />
+      <recent name="D:\git\spark\S3\b46488\chap4\wordcount\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="wwwlog" />
+      <recent name="chap6" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.wwwlog.LogCount">
+    <configuration name="CalculateChange" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="stock.CalculateChange" />
+      <module name="wordcount" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs://master:9864/user/root/reform_data/000009.csv  /user/root/gujia_zf11 ," />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="chap4.HelloWorld" />
+      <module name="wordcount" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogCount" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="chap4.LogCount" />
+      <module name="wordcount" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs://master:9864/user/myname/jc_content_viewlog.txt hdfs://master:9864/user/myname/out_wy_count hdfs://master:9864/user/myname/out_user_count hdfs://master:9864/user/myname/out_ny_count" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Logistic_User" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="chap8.Logistic_User" />
+      <module name="wordcount" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs://master:9864/user/root/mllib/data.txt/part-00000 /user/root/mllib/logistic_model f1score_path 0.5 , 0.8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovingAverage" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="stock.MovingAverage" />
+      <module name="wordcount" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs://master:9864/user/root/reform_data  hdfs://master:9864/user/root/yidongpj , 10 wucha " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="WordCount" />
+      <module name="wordcount" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCount1" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="WordCount1" />
+      <module name="wordcount" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chap4.WordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="chap4.WordCount" />
+      <module name="wordcount" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wwwlog.LogCount" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="wwwlog.LogCount" />
+      <module name="wordcount" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs://master:9864/user/myname/bigdata.hddly.cn-access_log hdfs://master:9864/user/myname/output_wwwlog1 hdfs://master:9864/user/myname/output_wwwlog2 hdfs://master:9864/user/myname/output_wwwlog3 hdfs://master:9864/user/myname/output_wwwlog4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wwwlog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="wordcount" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloWorld" />
+        <item itemvalue="Application.chap4.WordCount" />
+        <item itemvalue="Scala REPL.Scala REPL" />
+        <item itemvalue="Application.WordCount1" />
+        <item itemvalue="Application.WordCount" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="intInjectionMapping">
+      <map>
+        <entry key="xml" value="XML" />
+      </map>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\yuxm\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c171951-bcdc-413a-8f13-3f93c4d11b8d" name="Changes" comment="" />
+      <created>1659410565845</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659410565845</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add wwwlogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add wwwlogs" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/stock/CalculateChange.scala</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/stock/CalculateChange.scala</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/stock/CalculateChange.scala</url>
+          <line>16</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/stock/MovingAverage.scala</url>
+          <line>29</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/ConnectionPool.scala</url>
+          <line>18</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/chap4/LogCount.scala</url>
+          <line>17</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/chap4/LogCount.scala</url>
+          <line>41</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/chap4/LogCount.scala</url>
+          <line>45</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/chap4/LogCount.scala</url>
+          <line>35</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/chap4/HelloWorld.scala</url>
+          <line>7</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/chap4/HelloWorld.scala</url>
+          <line>6</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/java/wwwlog/LogCount.scala</url>
+          <line>89</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/wordcount$CalculateChange.ic" NAME="CalculateChange Coverage Results" MODIFIED="1659529847600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>stock.*</FILTER>
+    </SUITE>
+  </component>
+</project>
